@@ -1,0 +1,70 @@
+Begin job by input: only_posi_291.lowdin, for user: pmorenor  at  jue 17 oct 2024 19:56:29 -05
+under operating system Linux Hefesto 5.4.0-196-generic #216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f2cffef7078af1231fe3319081e66b682883a80b
+  compilation date:  mar 06 feb 2024 16:53:31 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	E+ GRIBAKIN-10S4P2D        0  0  0.00
+	E+ GRIBAKIN-10S4P2D	   60.0 0 0 addParticles=-1
+	Be Dirac	0 0 0
+	Be Dirac	60.0 0 0
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+EXTERPOTENTIAL
+	E+ T298
+END EXTERPOTENTIAL
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+
+CONTROL
+	units="BOHR"
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Thu Oct 17 19:56:29 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... 
+ ### ERROR ###
+    Debug description: ExternalPotential module at Load function.
+    Description: The ExternalPotential file: T298 was not found!
+ ###
+ 
+
+ Elapsed Time :   2.90E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Thu Oct 17 19:56:29 2024
+-rw-rw-r-- 1 pmorenor pmorenor  418 oct 17 19:56 only_posi_291
+-rw-rw-r-- 1 pmorenor pmorenor 1.4K oct 17 19:56 only_posi_291.aux
+-rw-rw-r-- 1 pmorenor pmorenor  425 oct 17 19:56 only_posi_291.lowdin
+-rw-rw-r-- 1 pmorenor pmorenor 1.9K oct 17 19:56 only_posi_291.out
+-rw-rw-r-- 1 pmorenor pmorenor  37K oct 17 19:56 only_posi_291.vec

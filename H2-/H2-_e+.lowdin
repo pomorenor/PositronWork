@@ -1,0 +1,28 @@
+
+GEOMETRY
+        e-(H) 6-311++G.d.p 0 0 0 addParticles=1
+	e-(H) 6-311++G.d.p 10 0 0 addParticles=1
+	E+ GRIBAKIN-10S4P2D        0  0  0
+	E+ GRIBAKIN-10S4P2D	   10  0  0 addParticles=-1
+        H     dirac	   0 0 0
+	H     dirac        10 0 0
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+
+CONTROL
+	units="BOHR"
+	convergenceMethod=1
+	SCFGhostSpecies="POSITRON"
+	overlapEigenThreshold=1E-6
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+

@@ -1,0 +1,780 @@
+Begin job by input: only_posi_94.lowdin, for user: pmorenor  at  jue 17 oct 2024 19:53:30 -05
+under operating system Linux Hefesto 5.4.0-196-generic #216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f2cffef7078af1231fe3319081e66b682883a80b
+  compilation date:  mar 06 feb 2024 16:53:31 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	E+ GRIBAKIN-10S4P2D        0  0  0.00
+	E+ GRIBAKIN-10S4P2D	   20.6 0 0 addParticles=-1
+	Be Dirac	0 0 0
+	Be Dirac	20.6 0 0
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+EXTERPOTENTIAL
+	E+ T101
+END EXTERPOTENTIAL
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+
+CONTROL
+	units="BOHR"
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Thu Oct 17 19:53:30 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  RHF
+         NUMBER OF CORES:     4
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-08
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ 
+  MOLECULAR SYSTEM: only_posi_94
+ -----------------
+ 
+    DESCRIPTION   : only_posi_94
+    CHARGE        :  10
+    PUNTUAL GROUP : NONE
+ 
+ 
+  INFORMATION OF PARTICLES :
+ =========================
+         Total number of particles   =       3
+         Number of quantum particles =       1
+         Number of puntual charges   =       2
+         Number of quantum species   =       1
+ 
+                 INFORMATION OF QUANTUM SPECIES 
+     ---------------------------------------------------------------------
+         ID      Symbol            mass     charge     spin     multiplicity
+     ---------------------------------------------------------------------
+         1             E+         1.0000      1.00      0.50      1.00
+ 
+                   CONSTANTS OF COUPLING 
+      ------------------------------------------------------------
+           Symbol          kappa      eta     lambda     occupation
+      ------------------------------------------------------------
+                 E+        -1.0      1.00      1.00      1.00
+ 
+                   BASIS SET FOR SPECIES 
+      ------------------------------------------------------------
+           Symbol          N. Basis     N. Particles     Basis Set
+      ------------------------------------------------------------
+                 E+           32                1     GRIBAKIN-1
+ 
+                                ATOMIC BASIS
+         ------------------------------------------------------------
+          PRIMITIVE   SHELL             EXPONENT         COEFFICIENT 
+         ------------------------------------------------------------
+ 
+    BEGIN DESCRIPTION OF BASIS FOR:    E+
+    ==============================
+ 
+ 
+            E+ BASIS SET:GRIBAKIN-10S4P2
+             1         S                0.00010000          1.00000000
+             1         S                0.00030000          1.00000000
+             1         S                0.00090000          1.00000000
+             1         S                0.00270000          1.00000000
+             1         S                0.00810000          1.00000000
+             1         S                0.02430000          1.00000000
+             1         S                0.07290000          1.00000000
+             1         S                0.21870000          1.00000000
+             1         S                0.65610000          1.00000000
+             1         S                1.96830000          1.00000000
+             1         P                0.00010000          1.00000000
+             1         P                0.00030000          1.00000000
+             1         P                0.00090000          1.00000000
+             1         P                0.00270000          1.00000000
+             1         D                0.00010000          1.00000000
+             1         D                0.00030000          1.00000000
+ 
+            E+ BASIS SET:GRIBAKIN-10S4P2
+             1         S                0.00010000          1.00000000
+             1         S                0.00030000          1.00000000
+             1         S                0.00090000          1.00000000
+             1         S                0.00270000          1.00000000
+             1         S                0.00810000          1.00000000
+             1         S                0.02430000          1.00000000
+             1         S                0.07290000          1.00000000
+             1         S                0.21870000          1.00000000
+             1         S                0.65610000          1.00000000
+             1         S                1.96830000          1.00000000
+             1         P                0.00010000          1.00000000
+             1         P                0.00030000          1.00000000
+             1         P                0.00090000          1.00000000
+             1         P                0.00270000          1.00000000
+             1         D                0.00010000          1.00000000
+             1         D                0.00030000          1.00000000
+    ... END DESCRIPTION OF BASIS
+ 
+ 
+  END INFORMATION OF PARTICLES
+ 
+ 
+  INFORMATION OF THE QUANTUM SYSTEM 
+     ---------------------------------------------------------------------
+                 ID     Occupied Orbitals     Basis size
+     ---------------------------------------------------------------------
+                 E+            1               68
+ 
+  END INFORMATION OF QUANTUM SYSTEM
+ 
+ 
+  INFORMATION OF EXTERNAL POTENTIALS 
+ 
+ =======
+ External Potential for E+ : T101
+ Type : 
+                     Exponent         l       R_x       R_y       R_z              Factor
+                46.4142090600         0   0.00000   0.00000   0.00000       -0.4538438220
+                12.8200915000         0   0.00000   0.00000   0.00000       -1.4417258300
+                 0.6509542200         0   0.00000   0.00000   0.00000     -181.3764690000
+                 0.1411467600         0   0.00000   0.00000   0.00000       -1.9128095300
+                 3.9201797200         0   0.00000   0.00000   0.00000       -2.3617162900
+                 0.6465474500         0   0.00000   0.00000   0.00000      180.3049600000
+                 0.0261865800         0   0.00000   0.00000   0.00000       -0.6554562580
+                 0.0003126400         0   0.00000   0.00000   0.00000       -0.1672392340
+                 0.0042413400         0   0.00000   0.00000   0.00000       -0.2892373690
+                46.4142090600         0  20.60000   0.00000   0.00000       -0.4538438220
+                12.8200915000         0  20.60000   0.00000   0.00000       -1.4417258300
+                 0.6509542200         0  20.60000   0.00000   0.00000     -181.3764690000
+                 0.1411467600         0  20.60000   0.00000   0.00000       -1.9128095300
+                 3.9201797200         0  20.60000   0.00000   0.00000       -2.3617162900
+                 0.6465474500         0  20.60000   0.00000   0.00000      180.3049600000
+                 0.0261865800         0  20.60000   0.00000   0.00000       -0.6554562580
+                 0.0003126400         0  20.60000   0.00000   0.00000       -0.1672392340
+                 0.0042413400         0  20.60000   0.00000   0.00000       -0.2892373690
+ 
+  END INFORMATION OF EXTERNAL POTENTIALS
+ 
+                       INITIAL GEOMETRY: AMSTRONG
+                 -----------------------------------
+                       <x>                 <y>                 <z>
+        E+        0.0000000000        0.0000000000        0.0000000000
+        E+       10.9010513343        0.0000000000        0.0000000000
+        BE        0.0000000000        0.0000000000        0.0000000000
+        BE       10.9010513343        0.0000000000        0.0000000000
+ 
+                     MATRIX OF DISTANCE: ANGSTROM
+                 -----------------------------------
+                          BE(1)          BE(2)     
+ 
+        BE(1)            0.000000      10.901051
+        BE(2)           10.901051       0.000000
+ 
+--------------------------------------------------------------------------------
+** PROGRAM: SCF (Hartree Fock).     Author: S.A. Gonzalez, E. Posada, F. Moncada
+--------------------------------------------------------------------------------
+INFO: RUNNING IN RHF MODE.
+ 
+----------------------------------------------------------------------
+** PROGRAM INTS                          Author: E. F. Posada, 2013   
+----------------------------------------------------------------------
+INFO: RUNNING IN ONE_PARTICLE MODE.
+ 
+ Number of Overlap integrals for species POSITRON:   4624
+ Number of Kinetic integrals for species POSITRON:   4624
+ Number of Nuclear integrals for species POSITRON:   4624
+ Number of Moment integrals for species POSITRON:  13872
+ Number of 3C Overlap integrals for species POSITRON:   4624
+ 
+** TOTAL CPU Time INTS :      0.056 (s)
+** TOTAL Elapsed Time INTS :      0.050 (s)
+ 
+Removed     2 orbitals for species POSITRON with overlap eigen threshold of 1.000E-06
+ Combination coefficients for POSITRON were read from only_posi_94.vec
+     number of   POSITRON     particles in guess density matrix:     1.000000
+ Number of unique integrals for species: 1 = 319033
+ 
+ TWO-BODY INTEGRAL SETUP: 
+------------------------- 
+ Storage:   DISK
+ Scheme: LIBINT
+ Stack size:  30000
+ 
+ LIBINT library, Fermann, J. T.; Valeev, F. L. 2010                   
+ LOWDIN-LIBINT Implementation V. 2.1  Posada E. F. ; Reyes A. 2016   
+ ----------------------------------------------------------------------
+
+*** TOTAL CPU time intra-species integrals :      0.087 (s)
+*** TOTAL elapsed time intra-species integrals :      0.025 (s)
+
+INFO: RUNNING SCHEME SIMULTANEOUS
+ 
+ Begin Multi-Species SCF calculation:
+ 
+ --------------------------------------------------------------------------------------------------
+      Iteration                   Energy            Energy Change           Density Change
+ --------------------------------------------------------------------------------------------------
+              1           0.775584061542          -0.775584061542           2.486996666297
+              2           0.772445111333           0.003138950210           0.000000000000
+              3           0.772445111333           0.000000000000           0.000000000000
+ Total energy converged after   3 global iterations                                                  
+ 
+ ...end Multi-Species SCF calculation
+ 
+ 
+ Begin SCF calculation by: POSITRON
+ -------------------------
+ 
+ -----------------------------------------------------------------------------------
+ Iteration                   Energy           Density Change         DIIS Error 
+ -----------------------------------------------------------------------------------
+    1          -0.817494762257           0.000000000000                 -- 
+    2          -0.817494762257           0.000000000000                 -- 
+ 
+ ... end SCF calculation
+ 
+  EIGENVALUES AND EIGENVECTORS: 
+ ==============================
+ 
+ 
+  Eigenvalues for: POSITRON
+ -----------------
+ 
+    1          -0.004253917793
+    2          -0.001111821147
+    3           0.003371845500
+    4           0.004026835609
+    5           0.004026835609
+    6           0.005663391030
+    7           0.006739155964
+    8           0.007061492964
+    9           0.007061492964
+   10           0.010282720458
+   11           0.010282720458
+   12           0.010497792480
+   13           0.013227419948
+   14           0.015453556986
+   15           0.015453556986
+   16           0.015491639445
+   17           0.015634528428
+   18           0.022285584248
+   19           0.028161191931
+   20           0.036479412360
+   21           0.037921579526
+   22           0.037921579526
+   23           0.042318976292
+   24           0.042318976292
+   25           0.042438703578
+   26           0.043428858820
+   27           0.044323413430
+   28           0.045129222006
+   29           0.045129222011
+   30           0.046748482891
+   31           0.046748482891
+   32           0.047571722196
+   33           0.047571722196
+   34           0.048552487848
+   35           0.049742712538
+   36           0.049742712538
+   37           0.049899102460
+   38           0.051442488036
+   39           0.054275322453
+   40           0.054275322453
+   41           0.054542989636
+   42           0.054804238872
+   43           0.054804238872
+   44           0.055766605761
+   45           0.056275653442
+   46           0.056275653442
+   47           0.056431356976
+   48           0.056431356978
+   49           0.056620869030
+   50           0.057480156528
+   51           0.058666803803
+   52           0.059114138784
+   53           0.059114138786
+   54           0.059768759541
+   55           0.059768759542
+   56           0.060867710472
+   57           0.062006270125
+   58           0.062779285581
+   59           0.191840274015
+   60           0.194288487318
+   61           0.854626482712
+   62           0.856005339409
+   63           2.940989118896
+   64           2.941992479081
+   65          10.802408206155
+   66          10.803368415992
+   67     1000000.000000000000
+   68     1000000.000000000000
+ 
+  end of eigenvalues 
+ 
+  Occupied Eigenvectors for: POSITRON
+ --------------------------- 
+ 
+                          -0.0043   
+ 
+    1     E+     S       0.066592
+    2     E+     S      -0.066704
+    3     E+     S       0.040499
+    4     E+     S       0.218072
+    5     E+     S       0.219450
+    6     E+     S       0.191860
+    7     E+     S       0.113854
+    8     E+     S      -0.093067
+    9     E+     S      -0.006476
+   10     E+     S       0.000108
+   11     E+    Px      -0.345857
+   12     E+    Py      -0.000000
+   13     E+    Pz      -0.000000
+   14     E+    Px       0.148824
+   15     E+    Py       0.000000
+   16     E+    Pz      -0.000000
+   17     E+    Px      -0.012960
+   18     E+    Py      -0.000000
+   19     E+    Pz       0.000000
+   20     E+    Px       0.024605
+   21     E+    Py       0.000000
+   22     E+    Pz      -0.000000
+   23     E+   Dxx      -0.061920
+   24     E+   Dxy      -0.000000
+   25     E+   Dxz      -0.000000
+   26     E+   Dyy       0.000684
+   27     E+   Dyz      -0.000000
+   28     E+   Dzz       0.000684
+   29     E+   Dxx       0.049248
+   30     E+   Dxy       0.000000
+   31     E+   Dxz      -0.000000
+   32     E+   Dyy       0.004228
+   33     E+   Dyz       0.000000
+   34     E+   Dzz       0.004228
+   35     E+     S       0.066592
+   36     E+     S      -0.066704
+   37     E+     S       0.040499
+   38     E+     S       0.218072
+   39     E+     S       0.219450
+   40     E+     S       0.191860
+   41     E+     S       0.113854
+   42     E+     S      -0.093067
+   43     E+     S      -0.006476
+   44     E+     S       0.000108
+   45     E+    Px       0.345857
+   46     E+    Py       0.000000
+   47     E+    Pz       0.000000
+   48     E+    Px      -0.148824
+   49     E+    Py      -0.000000
+   50     E+    Pz       0.000000
+   51     E+    Px       0.012960
+   52     E+    Py       0.000000
+   53     E+    Pz      -0.000000
+   54     E+    Px      -0.024605
+   55     E+    Py      -0.000000
+   56     E+    Pz      -0.000000
+   57     E+   Dxx      -0.061920
+   58     E+   Dxy      -0.000000
+   59     E+   Dxz      -0.000000
+   60     E+   Dyy       0.000684
+   61     E+   Dyz       0.000000
+   62     E+   Dzz       0.000684
+   63     E+   Dxx       0.049248
+   64     E+   Dxy       0.000000
+   65     E+   Dxz      -0.000000
+   66     E+   Dyy       0.004228
+   67     E+   Dyz      -0.000000
+   68     E+   Dzz       0.004228
+ 
+ 
+  end of eigenvectors 
+ 
+  END OF EIGENVALUES AND EIGENVECTORS
+ 
+ 
+  COMPONENTS OF KINETIC ENERGY: 
+ -----------------------------
+ 
+            POSITRON Kinetic energy =            0.014637956369
+                                     _________________________
+               Total kinetic energy =            0.014637956369
+ 
+  COMPONENTS OF POTENTIAL ENERGY: 
+ -------------------------------
+ 
+          Fixed potential energy    =            0.776699029126
+ 
+  Quantum/Fixed interaction energy: 
+ ----------------------------------
+ 
+    POSITRON/Fixed interact. energy =            0.794348970301
+                                     _________________________
+               Total Q/Fixed energy =            0.794348970301
+ 
+  Coulomb energy: 
+ ------------------
+ 
+   POSITRON/POSITRON Hartree energy =            0.000000000000
+                                     _________________________
+               Total Hartree energy =            0.000000000000
+ 
+  Exchange(HF) energy: 
+ ----------------------
+ 
+           POSITRON Exchange energy =            0.000000000000
+                                     _________________________
+              Total Exchange energy =            0.000000000000
+ 
+  External Potential energy: 
+ ----------------------------
+ 
+            POSITRON Ext Pot energy =           -0.813240844463
+                                     _________________________
+    Total External Potential energy =           -0.813240844463
+ 
+  TOTAL ENERGY COMPONENTS: 
+ ==========================
+ 
+          TOTAL KINETIC ENERGY      =            0.014637956369
+          TOTAL POTENTIAL ENERGY    =            0.757807154964
+                                     _________________________
+                       TOTAL ENERGY =            0.772445111333
+ 
+                 VIRIAL RATIO (V/T) =          -51.770010502104
+ 
+ 
+  END ENERGY COMPONENTS
+ 
+ 
+** TOTAL CPU Time SCF :      0.008 (s)
+** TOTAL Elapsed Time SCF :      0.091 (s)
+ 
+ We are calculating properties for POSITRON in the HF/KS ground state
+ 
+  POPULATION ANALYSES: 
+ ====================
+ 
+ MULLIKEN Population: for POSITRON  
+ ---------------------
+ 
+                                    
+ 
+    1     E+     S       0.012235
+    2     E+     S      -0.024708
+    3     E+     S       0.025322
+    4     E+     S       0.172006
+    5     E+     S       0.163183
+    6     E+     S       0.112481
+    7     E+     S       0.042287
+    8     E+     S      -0.015601
+    9     E+     S      -0.000344
+   10     E+     S       0.000002
+   11     E+    Px      -0.012463
+   12     E+    Py      -0.000000
+   13     E+    Pz      -0.000000
+   14     E+    Px       0.017114
+   15     E+    Py       0.000000
+   16     E+    Pz       0.000000
+   17     E+    Px      -0.003484
+   18     E+    Py      -0.000000
+   19     E+    Pz      -0.000000
+   20     E+    Px       0.008785
+   21     E+    Py       0.000000
+   22     E+    Pz      -0.000000
+   23     E+   Dxx      -0.000882
+   24     E+   Dxy       0.000000
+   25     E+   Dxz      -0.000000
+   26     E+   Dyy       0.000005
+   27     E+   Dyz      -0.000000
+   28     E+   Dzz       0.000005
+   29     E+   Dxx       0.003752
+   30     E+   Dxy      -0.000000
+   31     E+   Dxz      -0.000000
+   32     E+   Dyy       0.000153
+   33     E+   Dyz      -0.000000
+   34     E+   Dzz       0.000153
+   35     E+     S       0.012235
+   36     E+     S      -0.024708
+   37     E+     S       0.025322
+   38     E+     S       0.172006
+   39     E+     S       0.163183
+   40     E+     S       0.112481
+   41     E+     S       0.042287
+   42     E+     S      -0.015601
+   43     E+     S      -0.000344
+   44     E+     S       0.000002
+   45     E+    Px      -0.012463
+   46     E+    Py       0.000000
+   47     E+    Pz       0.000000
+   48     E+    Px       0.017114
+   49     E+    Py       0.000000
+   50     E+    Pz      -0.000000
+   51     E+    Px      -0.003484
+   52     E+    Py       0.000000
+   53     E+    Pz       0.000000
+   54     E+    Px       0.008785
+   55     E+    Py      -0.000000
+   56     E+    Pz       0.000000
+   57     E+   Dxx      -0.000882
+   58     E+   Dxy       0.000000
+   59     E+   Dxz      -0.000000
+   60     E+   Dyy       0.000005
+   61     E+   Dyz       0.000000
+   62     E+   Dzz       0.000005
+   63     E+   Dxx       0.003752
+   64     E+   Dxy      -0.000000
+   65     E+   Dxz      -0.000000
+   66     E+   Dyy       0.000153
+   67     E+   Dyz       0.000000
+   68     E+   Dzz       0.000153
+ 
+                           __________
+              Total =        1.000000
+ 
+  Atomic MULLIKEN Population: for POSITRON  
+            BE               0.500000
+            BE               0.500000
+ 
+ ...end of MULLIKEN Population
+ 
+ 
+ END POPULATION ANALYSES 
+ 
+ 
+  POPULATION ANALYSES: 
+ ====================
+ 
+ LOWDIN Population: for POSITRON  
+ ---------------------
+ 
+                                    
+ 
+    1     E+     S       0.001553
+    2     E+     S       0.008193
+    3     E+     S       0.046917
+    4     E+     S       0.133498
+    5     E+     S       0.149982
+    6     E+     S       0.100782
+    7     E+     S       0.030658
+    8     E+     S       0.000489
+    9     E+     S       0.000160
+   10     E+     S       0.000020
+   11     E+    Px       0.000062
+   12     E+    Py       0.000000
+   13     E+    Pz       0.000000
+   14     E+    Px       0.001011
+   15     E+    Py       0.000000
+   16     E+    Pz       0.000000
+   17     E+    Px       0.007979
+   18     E+    Py       0.000000
+   19     E+    Pz       0.000000
+   20     E+    Px       0.018349
+   21     E+    Py       0.000000
+   22     E+    Pz       0.000000
+   23     E+   Dxx       0.000001
+   24     E+   Dxy       0.000000
+   25     E+   Dxz       0.000000
+   26     E+   Dyy       0.000003
+   27     E+   Dyz       0.000000
+   28     E+   Dzz       0.000003
+   29     E+   Dxx       0.000131
+   30     E+   Dxy       0.000000
+   31     E+   Dxz       0.000000
+   32     E+   Dyy       0.000104
+   33     E+   Dyz       0.000000
+   34     E+   Dzz       0.000104
+   35     E+     S       0.001553
+   36     E+     S       0.008193
+   37     E+     S       0.046917
+   38     E+     S       0.133498
+   39     E+     S       0.149982
+   40     E+     S       0.100782
+   41     E+     S       0.030658
+   42     E+     S       0.000489
+   43     E+     S       0.000160
+   44     E+     S       0.000020
+   45     E+    Px       0.000062
+   46     E+    Py       0.000000
+   47     E+    Pz       0.000000
+   48     E+    Px       0.001011
+   49     E+    Py       0.000000
+   50     E+    Pz       0.000000
+   51     E+    Px       0.007979
+   52     E+    Py       0.000000
+   53     E+    Pz       0.000000
+   54     E+    Px       0.018349
+   55     E+    Py       0.000000
+   56     E+    Pz       0.000000
+   57     E+   Dxx       0.000001
+   58     E+   Dxy       0.000000
+   59     E+   Dxz       0.000000
+   60     E+   Dyy       0.000003
+   61     E+   Dyz       0.000000
+   62     E+   Dzz       0.000003
+   63     E+   Dxx       0.000131
+   64     E+   Dxy       0.000000
+   65     E+   Dxz       0.000000
+   66     E+   Dyy       0.000104
+   67     E+   Dyz       0.000000
+   68     E+   Dzz       0.000104
+ 
+                           __________
+              Total =        1.000000
+ 
+  Atomic LOWDIN Population: for POSITRON  
+            BE               0.500000
+            BE               0.500000
+ 
+ ...end of LOWDIN Population
+ 
+ 
+ END POPULATION ANALYSES 
+ 
+ 
+  EXPECTED POSITIONS OF QUANTUM SPECIES:
+ ======================
+ 
+ POSITIONS IN ANGSTROMS
+ ------
+ 
+                        <x>      <y>      <z>         
+           POSITRON   5.4505   0.0000  -0.0000
+ 
+ END EXPECTED POSITIONS
+ 
+ 
+  ELECTROSTATIC MOMENTS:
+ ======================
+ 
+ DIPOLE: (DEBYE)
+ ------
+ 
+                           <Dx>         <Dy>         <Dz>          |D|
+           POSITRON  26.17998524   0.00000000  -0.00000000
+    Point charges:  209.43988190   0.00000000   0.00000000
+                     ____________________________
+      Total Dipole: 235.61986713   0.00000000  -0.00000000 235.61986713
+ 
+ QUADRUPOLE NON-TRACELESS: (DEBYE ANGS)
+ ------
+ 
+                           <xx>         <yy>         <zz>         <xy>         <xz>         <yz>
+           POSITRON    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+    Point charges:  2283.11464357    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+  Total Quadrupole: 2283.11464357    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+                     ____________________________
+ 
+ END ELECTROSTATIC MOMENTS
+ 
+
+
+ *****************************************************************************
+                               *  Molden2AIM  *
+                          Version 3.1.0,  02/25/2015
+           It converts the format from MOLDEN to AIM-WFN and NBO-47
+ *****************************************************************************
+
+
+ The MOLDEN file only_posi_94.POSITRON.molden has been found.
+
+
+ >>> Cartesian basis functions are used.
+
+ >>> SUMMARY
+
+     Number of atoms:                                 2
+     Maximum angular momentum:                        2
+     Number of primitive Cartesian functions:        68
+     Number of contracted Cartesian functions:       68
+     Number of primitive spherical functions:        64
+     Number of contracted spherical functions:       64
+     Number of orbitals to be printed:               68
+ =============================================================================
+
+
+  A new Molden file is generated successfully!
+  File Name = only_posi_94.POSITRON_new.molden
+ =============================================================================
+
+
+  A WFN file is generated successfully!
+  File Name = only_posi_94.POSITRON.wfn
+
+  Please use
+   AIM2000, AIMALL, AIMPAC, AIMPAC2, AIM-UC, CheckDen, DGrid, MORPHY,
+   MultiWFN, PAMoC, ProMolden, TopChem, TopMoD, or XAIM
+
+  to analyse the electron density distribution.
+ =============================================================================
+ --------------------------------------------------------
+ WFNFILE                1
+          FileName: only_posi_94.POSITRON.wfn       and .molden                                                         
+ --------------------------------------------------------
+ 
+ 
+** TOTAL CPU Time Outputs :      0.053 (s)
+** TOTAL Elapsed Time Outputs :      0.048 (s)
+ 
+
+  TOTAL CPU Time:      0.029 (s)
+ TOTAL Wall Time:      0.181 (s)
+  Elapsed Time:   0h  0m  0s 182ms
+LOWDIN execution terminated normally at : Thu Oct 17 19:53:30 2024
+-rw-rw-r-- 1 pmorenor pmorenor 2.1M oct 17 19:53 0POSITRON.ints
+-rw-rw-r-- 1 pmorenor pmorenor 2.1M oct 17 19:53 1POSITRON.ints
+-rw-rw-r-- 1 pmorenor pmorenor 2.1M oct 17 19:53 2POSITRON.ints
+-rw-rw-r-- 1 pmorenor pmorenor 2.1M oct 17 19:53 3POSITRON.ints
+-rw-rw-r-- 1 pmorenor pmorenor   68 oct 17 19:53 gepol.inp
+-rw-rw-r-- 1 pmorenor pmorenor    0 oct 17 19:53 gepol.xyzr
+-rw-rw-r-- 1 pmorenor pmorenor 5.4K oct 17 19:53 lowdin.bas
+-rw-rw-r-- 1 pmorenor pmorenor  15K oct 17 19:53 lowdin.dat
+-rw-rw-r-- 1 pmorenor pmorenor 473K oct 17 19:53 lowdin.opints
+-rw-rw-r-- 1 pmorenor pmorenor  13K oct 17 19:53 lowdin.sys
+-rw-rw-r-- 1 pmorenor pmorenor 364K oct 17 19:53 lowdin.wfn
+-rw-rw-r-- 1 pmorenor pmorenor 1.7K oct 17 19:53 m2a.ini
+-rw-rw-r-- 1 pmorenor pmorenor  418 oct 17 19:53 only_posi_94
+-rw-rw-r-- 1 pmorenor pmorenor 1.4K oct 17 19:53 only_posi_94.aux
+-rw-rw-r-- 1 pmorenor pmorenor  425 oct 17 19:53 only_posi_94.lowdin
+-rw-rw-r-- 1 pmorenor pmorenor  28K oct 17 19:53 only_posi_94.out
+-rw-rw-r-- 1 pmorenor pmorenor 105K oct 17 19:53 only_posi_94.POSITRON.molden
+-rw-rw-r-- 1 pmorenor pmorenor 124K oct 17 19:53 only_posi_94.POSITRON_new.molden
+-rw-rw-r-- 1 pmorenor pmorenor  81K oct 17 19:53 only_posi_94.POSITRON.wfn
+-rw-rw-r-- 1 pmorenor pmorenor  37K oct 17 19:53 only_posi_94.vec

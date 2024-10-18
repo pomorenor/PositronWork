@@ -1,0 +1,34 @@
+
+&LowdinParameters
+	LowdinParameters_UNITS ="BOHR" 
+	LowdinParameters_CONVERGENCEMETHOD =1 
+	LowdinParameters_SCFGHOSTSPECIES ="POSITRON" 
+	LowdinParameters_OVERLAPEIGENTHRESHOLD =1E-6 
+	LowdinParameters_HFPRINTEIGENVALUES =T 
+	LowdinParameters_TOTALENERGYTOLERANCE =1E-9 
+/
+
+&InputTasks
+	InputTasks_METHOD = "RHF"
+/
+
+&InputParticle
+	InputParticle_name = "E+"
+	InputParticle_basisSetName = "GRIBAKIN-10S4P2D"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputSystem
+	InputSystem_numberOfParticles = 1
+	InputSystem_numberOfExternalPots =  1
+	InputSystem_numberOfInterPots =  0
+	InputSystem_numberOfLJCenters =  0
+	InputSystem_numberOfOutputs =  0
+	InputSystem_numberOfSpeciesInCI =  0
+
+/
+
+&ExternalPot
+	ExternalPot_name = "P27"
+	ExternalPot_specie =  "E+" 
+/

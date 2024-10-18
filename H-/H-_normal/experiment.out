@@ -1,0 +1,82 @@
+Begin job by input: experiment.lowdin, for user: pmorenor  at  jue 03 oct 2024 17:55:27 -05
+under operating system Linux Hefesto 5.4.0-196-generic #216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f2cffef7078af1231fe3319081e66b682883a80b
+  compilation date:  mar 06 feb 2024 16:53:31 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+        e-(H) 6-311++G.d.p 0 0 0 addMultiplicity=3
+	E+ GRIBAKIN-10S4P2D        0  0  0.00
+        H     dirac	   0 0 0
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+CONTROL
+	units="ANGS"
+	readCoefficients=T
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	readCoefficients=T
+	freezeElectronicOrbitals=T
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Thu Oct  3 17:55:27 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  RHF
+         NUMBER OF CORES:     4
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-08
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ species E-has fractional ocupation number   0.50000000000000000      please check your input addParticles and multiplicity
+ 
+ ### ERROR ###
+    Debug description: MolecularSystem module at build function.
+    Description: Fractional ocupation number, imposible combination of charge and multiplicity
+ ###
+ 
+
+ Elapsed Time :   1.63E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Thu Oct  3 17:55:27 2024
+-rw-rw-r-- 1 pmorenor pmorenor  382 oct  3 17:55 experiment
+-rw-rw-r-- 1 pmorenor pmorenor 1,2K oct  3 17:55 experiment.aux
+-rw-rw-r-- 1 pmorenor pmorenor  386 oct  3 17:55 experiment.lowdin
+-rw-rw-r-- 1 pmorenor pmorenor 2,8K oct  3 17:55 experiment.out

@@ -1,0 +1,24 @@
+
+GEOMETRY
+	E+ GRIBAKIN-10S4P2D        0  0  0.00
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+EXTERPOTENTIAL
+	E+	HARMONIC
+END EXTERPOTENTIAL
+
+CONTROL
+	units="ANGS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	readCoefficients=T
+	freezeElectronicOrbitals=F
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+

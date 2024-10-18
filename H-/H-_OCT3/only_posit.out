@@ -1,0 +1,39 @@
+Begin job by input: only_posit.lowdin, for user: pmorenor  at  jue 03 oct 2024 17:37:49 -05
+under operating system Linux Hefesto 5.4.0-196-generic #216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f2cffef7078af1231fe3319081e66b682883a80b
+  compilation date:  mar 06 feb 2024 16:53:31 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Thu Oct  3 17:37:49 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... 
+ ### ERROR ###
+    Debug description: InputManager loadTask function
+    Description: check the TASKS block in  input file, what method you want to use? I dont have super cow powers!
+ ###
+ 
+
+ Elapsed Time :   2.76E-04 (s)
+ lowdin execution terminated ABNORMALLY at : Thu Oct  3 17:37:49 2024
+-rw-rw-r-- 1 pmorenor pmorenor    0 oct  3 17:37 only_posit
+-rw-rw-r-- 1 pmorenor pmorenor  271 oct  3 17:37 only_posit.aux
+-rw-rw-r-- 1 pmorenor pmorenor 1,5K oct  3 17:37 only_posit.out
+-rw-rw-r-- 1 pmorenor pmorenor 9,5K oct  3 17:37 only_positron.vec

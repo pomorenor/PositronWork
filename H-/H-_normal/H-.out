@@ -1,0 +1,480 @@
+Begin job by input: H-.lowdin, for user: pmorenor  at  jue 03 oct 2024 13:34:12 -05
+under operating system Linux Hefesto 5.4.0-196-generic #216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f2cffef7078af1231fe3319081e66b682883a80b
+  compilation date:  mar 06 feb 2024 16:53:31 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+        e-(H) 6-311++G.d.p 0 0 0 addParticles=1
+        H     dirac	   0 0 0
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+OUTPUTS
+	wfnFile
+END OUTPUS
+
+CONTROL
+	units="BOHRS"
+readCoefficients=F
+convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Thu Oct  3 13:34:12 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  RHF
+         NUMBER OF CORES:     4
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-08
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ 
+  MOLECULAR SYSTEM: H-
+ -----------------
+ 
+    DESCRIPTION   : H-
+    CHARGE        :   0
+    PUNTUAL GROUP : NONE
+ 
+ 
+  INFORMATION OF PARTICLES :
+ =========================
+         Total number of particles   =       3
+         Number of quantum particles =       2
+         Number of puntual charges   =       1
+         Number of quantum species   =       1
+ 
+                 INFORMATION OF QUANTUM SPECIES 
+     ---------------------------------------------------------------------
+         ID      Symbol            mass     charge     spin     multiplicity
+     ---------------------------------------------------------------------
+         1             E-         1.0000     -1.00      0.50      1.00
+ 
+                   CONSTANTS OF COUPLING 
+      ------------------------------------------------------------
+           Symbol          kappa      eta     lambda     occupation
+      ------------------------------------------------------------
+                 E-        -1.0      2.00      2.00      1.00
+ 
+                   BASIS SET FOR SPECIES 
+      ------------------------------------------------------------
+           Symbol          N. Basis     N. Particles     Basis Set
+      ------------------------------------------------------------
+                 E-            5                2     6-311++G.D
+ 
+                                ATOMIC BASIS
+         ------------------------------------------------------------
+          PRIMITIVE   SHELL             EXPONENT         COEFFICIENT 
+         ------------------------------------------------------------
+ 
+    BEGIN DESCRIPTION OF BASIS FOR:    E-
+    ==============================
+ 
+ 
+             H BASIS SET:   6-311++G.D.P
+             1         S               33.86500000          0.02549380
+             2         S                5.09479000          0.19037300
+             3         S                1.15879000          0.85216100
+             1         S                0.32584000          1.00000000
+             1         S                0.10274100          1.00000000
+             1         S                0.03600000          1.00000000
+             1         P                0.75000000          1.00000000
+    ... END DESCRIPTION OF BASIS
+ 
+ 
+  END INFORMATION OF PARTICLES
+ 
+ 
+  INFORMATION OF THE QUANTUM SYSTEM 
+     ---------------------------------------------------------------------
+                 ID     Occupied Orbitals     Basis size
+     ---------------------------------------------------------------------
+                 E-            1                7
+ 
+  END INFORMATION OF QUANTUM SYSTEM
+ 
+                       INITIAL GEOMETRY: AMSTRONG
+                 -----------------------------------
+                       <x>                 <y>                 <z>
+       E-H        0.0000000000        0.0000000000        0.0000000000
+         H        0.0000000000        0.0000000000        0.0000000000
+ 
+                     MATRIX OF DISTANCE: ANGSTROM
+                 -----------------------------------
+                          H(1)      
+ 
+        H(1)             0.000000
+ 
+--------------------------------------------------------------------------------
+** PROGRAM: SCF (Hartree Fock).     Author: S.A. Gonzalez, E. Posada, F. Moncada
+--------------------------------------------------------------------------------
+INFO: RUNNING IN RHF MODE.
+ 
+----------------------------------------------------------------------
+** PROGRAM INTS                          Author: E. F. Posada, 2013   
+----------------------------------------------------------------------
+INFO: RUNNING IN ONE_PARTICLE MODE.
+ 
+ Number of Overlap integrals for species E-:     49
+ Number of Kinetic integrals for species E-:     49
+ Number of Nuclear integrals for species E-:     49
+ Number of Moment integrals for species E-:    147
+ 
+** TOTAL CPU Time INTS :      0.008 (s)
+** TOTAL Elapsed Time INTS :      0.002 (s)
+ 
+       Usign  HCORE density guess for species:         E-
+     number of         E-     particles in guess density matrix:     2.000000
+ Number of unique integrals for species: 1 = 115
+ 
+ TWO-BODY INTEGRAL SETUP: 
+------------------------- 
+ Storage:   DISK
+ Scheme: LIBINT
+ Stack size:  30000
+ 
+ LIBINT library, Fermann, J. T.; Valeev, F. L. 2010                   
+ LOWDIN-LIBINT Implementation V. 2.1  Posada E. F. ; Reyes A. 2016   
+ ----------------------------------------------------------------------
+
+*** TOTAL CPU time intra-species integrals :      0.013 (s)
+*** TOTAL elapsed time intra-species integrals :      0.004 (s)
+
+INFO: RUNNING SCHEME SIMULTANEOUS
+ 
+ Begin Multi-Species SCF calculation:
+ 
+ --------------------------------------------------------------------------------------------------
+      Iteration                   Energy            Energy Change           Density Change
+ --------------------------------------------------------------------------------------------------
+              1          -0.374993305810           0.374993305810           0.100897368591
+              2          -0.485238174540           0.110244868730           0.016869340696
+              3          -0.486895753551           0.001657579012           0.004723214102
+              4          -0.486956795538           0.000061041987           0.001634025346
+              5          -0.486962094082           0.000005298543           0.000567269030
+              6          -0.486962666329           0.000000572247           0.000193863161
+              7          -0.486962730548           0.000000064220           0.000065657303
+              8          -0.486962737801           0.000000007253           0.000022145017
+              9          -0.486962738621           0.000000000820           0.000007455813
+ Total energy converged after   9 global iterations                                                  
+ 
+ ...end Multi-Species SCF calculation
+ 
+ 
+ Begin SCF calculation by: E-
+ -------------------------
+ 
+ -----------------------------------------------------------------------------------
+ Iteration                   Energy           Density Change         DIIS Error 
+ -----------------------------------------------------------------------------------
+    1          -0.475837264020           0.016869340696                 -- 
+    2          -0.485363806782           0.004723214102                 -- 
+    3          -0.486618156878           0.001634025346                 -- 
+    4          -0.486866105756           0.000567269030                 -- 
+    5          -0.486932468120           0.000193863161                 -- 
+    6          -0.486952845134           0.000065657303                 -- 
+    7          -0.486959450464           0.000022145017                 -- 
+    8          -0.486961638358           0.000007455813                 -- 
+ 
+ ... end SCF calculation
+ 
+  EIGENVALUES AND EIGENVECTORS: 
+ ==============================
+ 
+ 
+  Eigenvalues for: E-
+ -----------------
+ 
+    1          -0.042517473566
+    2           0.283663055240
+    3           0.830860616306
+    4           1.906707722631
+    5           1.906707722631
+    6           1.906707722631
+    7           3.032287756957
+ 
+  end of eigenvalues 
+ 
+  Occupied Eigenvectors for: E-
+ --------------------------- 
+ 
+                          -0.0425   
+ 
+    1      H     S      -0.153129
+    2      H     S      -0.291902
+    3      H     S      -0.315124
+    4      H     S      -0.429912
+    5      H    Px       0.000000
+    6      H    Py       0.000000
+    7      H    Pz       0.000000
+ 
+ 
+  end of eigenvectors 
+ 
+  END OF EIGENVALUES AND EIGENVECTORS
+ 
+ 
+  COMPONENTS OF KINETIC ENERGY: 
+ -----------------------------
+ 
+                  E- Kinetic energy =            0.491923944995
+                                     _________________________
+               Total kinetic energy =            0.491923944995
+ 
+  COMPONENTS OF POTENTIAL ENERGY: 
+ -------------------------------
+ 
+          Fixed potential energy    =            0.000000000000
+ 
+  Quantum/Fixed interaction energy: 
+ ----------------------------------
+ 
+          E-/Fixed interact. energy =           -1.380812274579
+                                     _________________________
+               Total Q/Fixed energy =           -1.380812274579
+ 
+  Coulomb energy: 
+ ------------------
+ 
+               E-/E- Hartree energy =            0.803851181741
+                                     _________________________
+               Total Hartree energy =            0.803851181741
+ 
+  Exchange(HF) energy: 
+ ----------------------
+ 
+                 E- Exchange energy =           -0.401925590871
+                                     _________________________
+              Total Exchange energy =           -0.401925590871
+ 
+  TOTAL ENERGY COMPONENTS: 
+ ==========================
+ 
+          TOTAL KINETIC ENERGY      =            0.491923944995
+          TOTAL POTENTIAL ENERGY    =           -0.978886683709
+                                     _________________________
+                       TOTAL ENERGY =           -0.486962738714
+ 
+                 VIRIAL RATIO (V/T) =            1.989914688376
+ 
+ 
+  END ENERGY COMPONENTS
+ 
+ 
+** TOTAL CPU Time SCF :      0.007 (s)
+** TOTAL Elapsed Time SCF :      0.015 (s)
+ 
+ We are calculating properties for E- in the HF/KS ground state
+ 
+  POPULATION ANALYSES: 
+ ====================
+ 
+ MULLIKEN Population: for E-        
+ ---------------------
+ 
+                                    
+ 
+    1      H     S       0.170303
+    2      H     S       0.494958
+    3      H     S       0.602229
+    4      H     S       0.732510
+    5      H    Px       0.000000
+    6      H    Py       0.000000
+    7      H    Pz       0.000000
+ 
+                           __________
+              Total =        2.000000
+ 
+  Atomic MULLIKEN Population: for E-        
+            H                2.000000
+ 
+ ...end of MULLIKEN Population
+ 
+ 
+ END POPULATION ANALYSES 
+ 
+ 
+  POPULATION ANALYSES: 
+ ====================
+ 
+ LOWDIN Population: for E-        
+ ---------------------
+ 
+                                    
+ 
+    1      H     S       0.185734
+    2      H     S       0.485745
+    3      H     S       0.677553
+    4      H     S       0.650968
+    5      H    Px       0.000000
+    6      H    Py       0.000000
+    7      H    Pz       0.000000
+ 
+                           __________
+              Total =        2.000000
+ 
+  Atomic LOWDIN Population: for E-        
+            H                2.000000
+ 
+ ...end of LOWDIN Population
+ 
+ 
+ END POPULATION ANALYSES 
+ 
+ 
+  EXPECTED POSITIONS OF QUANTUM SPECIES:
+ ======================
+ 
+ POSITIONS IN ANGSTROMS
+ ------
+ 
+                        <x>      <y>      <z>         
+                 E-   0.0000   0.0000   0.0000
+ 
+ END EXPECTED POSITIONS
+ 
+ 
+  ELECTROSTATIC MOMENTS:
+ ======================
+ 
+ DIPOLE: (DEBYE)
+ ------
+ 
+                           <Dx>         <Dy>         <Dz>          |D|
+                 E-  -0.00000000  -0.00000000  -0.00000000
+    Point charges:    0.00000000   0.00000000   0.00000000
+                     ____________________________
+      Total Dipole:   0.00000000   0.00000000   0.00000000   0.00000000
+ 
+ QUADRUPOLE NON-TRACELESS: (DEBYE ANGS)
+ ------
+ 
+                           <xx>         <yy>         <zz>         <xy>         <xz>         <yz>
+                 E-   -0.00000000   -0.00000000   -0.00000000   -0.00000000   -0.00000000   -0.00000000
+    Point charges:     0.00000000    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+  Total Quadrupole:    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+                     ____________________________
+ 
+ END ELECTROSTATIC MOMENTS
+ 
+
+
+ *****************************************************************************
+                               *  Molden2AIM  *
+                          Version 3.1.0,  02/25/2015
+           It converts the format from MOLDEN to AIM-WFN and NBO-47
+ *****************************************************************************
+
+
+ The MOLDEN file H-.E-.molden has been found.
+
+
+ >>> Cartesian basis functions are used.
+
+ >>> SUMMARY
+
+     Number of atoms:                                 1
+     Maximum angular momentum:                        1
+     Number of primitive Cartesian functions:         9
+     Number of contracted Cartesian functions:        7
+     Number of primitive spherical functions:         9
+     Number of contracted spherical functions:        7
+     Number of orbitals to be printed:                7
+ =============================================================================
+
+
+  A new Molden file is generated successfully!
+  File Name = H-.E-_new.molden
+ =============================================================================
+
+
+  A WFN file is generated successfully!
+  File Name = H-.E-.wfn
+
+  Please use
+   AIM2000, AIMALL, AIMPAC, AIMPAC2, AIM-UC, CheckDen, DGrid, MORPHY,
+   MultiWFN, PAMoC, ProMolden, TopChem, TopMoD, or XAIM
+
+  to analyse the electron density distribution.
+ =============================================================================
+ --------------------------------------------------------
+ WFNFILE                1
+          FileName: H-.E-.wfn       and .molden                                                                         
+ --------------------------------------------------------
+ 
+ 
+ ### ERROR ###
+    Debug description: OutputBuilder_buildOutput
+    Description: The output type you requested has not been implemented yet
+ ###
+ 
+
+ Elapsed Time :   1.32E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Thu Oct  3 13:34:12 2024
+
+  TOTAL CPU Time:      0.007 (s)
+ TOTAL Wall Time:      0.037 (s)
+  Elapsed Time:   0h  0m  0s  37ms
+LOWDIN execution terminated normally at : Thu Oct  3 13:34:12 2024
+-rw-rw-r-- 1 pmorenor pmorenor 704K oct  3 13:34 0E-.ints
+-rw-rw-r-- 1 pmorenor pmorenor 704K oct  3 13:34 1E-.ints
+-rw-rw-r-- 1 pmorenor pmorenor 704K oct  3 13:34 2E-.ints
+-rw-rw-r-- 1 pmorenor pmorenor 704K oct  3 13:34 3E-.ints
+-rw-rw-r-- 1 pmorenor pmorenor   58 oct  3 13:34 gepol.inp
+-rw-rw-r-- 1 pmorenor pmorenor   50 oct  3 13:34 gepol.xyzr
+-rw-rw-r-- 1 pmorenor pmorenor  347 oct  3 13:34 H-
+-rw-rw-r-- 1 pmorenor pmorenor 1,1K oct  3 13:34 H-.aux
+-rw-rw-r-- 1 pmorenor pmorenor 1,9K oct  3 13:34 H-.E-.molden
+-rw-rw-r-- 1 pmorenor pmorenor 2,3K oct  3 13:34 H-.E-_new.molden
+-rw-rw-r-- 1 pmorenor pmorenor  11K oct  3 13:34 H-_e+_noSCF.vec
+-rw-rw-r-- 1 pmorenor pmorenor  11K oct  3 13:34 H-_e+.vec
+-rw-rw-r-- 1 pmorenor pmorenor 2,1K oct  3 13:34 H-.E-.wfn
+-rw-rw-r-- 1 pmorenor pmorenor  352 oct  3 13:34 H-.lowdin
+-rw-rw-r-- 1 pmorenor pmorenor  16K oct  3 13:34 H-.out
+-rw-rw-r-- 1 pmorenor pmorenor  648 oct  3 13:34 H-.vec
+-rw-rw-r-- 1 pmorenor pmorenor 1,1K oct  3 13:34 lowdin.bas
+-rw-rw-r-- 1 pmorenor pmorenor  15K oct  3 13:34 lowdin.dat
+-rw-rw-r-- 1 pmorenor pmorenor 7,5K oct  3 13:34 lowdin.opints
+-rw-rw-r-- 1 pmorenor pmorenor 3,4K oct  3 13:34 lowdin.sys
+-rw-rw-r-- 1 pmorenor pmorenor 5,1K oct  3 13:34 lowdin.wfn
+-rw-rw-r-- 1 pmorenor pmorenor 1,7K oct  3 13:34 m2a.ini

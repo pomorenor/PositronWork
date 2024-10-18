@@ -1,0 +1,38 @@
+
+&LowdinParameters
+	LowdinParameters_UNITS ="ANGS" 
+	LowdinParameters_READCOEFFICIENTS =F 
+	LowdinParameters_CONVERGENCEMETHOD =1 
+	LowdinParameters_OVERLAPEIGENTHRESHOLD =1E-6 
+	LowdinParameters_READCOEFFICIENTS =F 
+	LowdinParameters_FREEZEELECTRONICORBITALS =F 
+	LowdinParameters_HFPRINTEIGENVALUES =T 
+	LowdinParameters_TOTALENERGYTOLERANCE =1E-9 
+/
+
+&InputTasks
+	InputTasks_METHOD = "UHF"
+/
+
+&InputParticle
+	InputParticle_name = "E-[H]"
+	InputParticle_basisSetName = "6-311++G.D.P"
+	InputParticle_multiplicity = 2
+	InputParticle_addParticles = -1
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputSystem
+	InputSystem_numberOfParticles = 1
+	InputSystem_numberOfExternalPots =  1
+	InputSystem_numberOfInterPots =  0
+	InputSystem_numberOfLJCenters =  0
+	InputSystem_numberOfOutputs =  0
+	InputSystem_numberOfSpeciesInCI =  0
+
+/
+
+&ExternalPot
+	ExternalPot_name = "HMINTOTAL"
+	ExternalPot_specie =  "E-" 
+/

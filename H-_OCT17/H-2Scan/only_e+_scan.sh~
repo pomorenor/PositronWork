@@ -1,0 +1,54 @@
+#!/usr/bin/env bash     
+
+
+LC_NUMERIC="C"
+#DISTANCE=$1	
+#FIT_FILE=$2
+#POTENTIAL_FILE="POTENTIALSTEP"
+#POTENTIALS_FOLDER="/home/pohl/Desktop/LOWDIN/dependencies/bin/.lowdin2/lib/potentials"
+#LOWDIN_FILE=$3
+#LOWDIN_OUTPUT=$4
+#DATA_RESULTS=$5
+TEMPLATE_ONLY_P="/home/pmorenor/Desktop/PositronWork/H-_OCT17/H-2Scan/only_positron_H2.lowdin"
+TEMPLATE_USUAL_CALC="/home/pmorenor/Desktop/PositronWork/H-_OCT17/H-2Scan/template_usual.lowdin"
+
+
+
+DIST={}
+
+for i in $(seq 2 1 4); do
+	DIST+=($i)
+done 
+
+STEP=0
+
+for STEP in "${!DIST[@]}"; do
+
+	echo -e "P$STEP \n"
+	
+	LOWDIN_FILE_POSI="only_posi_$STEP.lowdin"
+	LOWDIN_FILE_USUAL="usual_$STEP.lowdin"
+
+	echo -e "Editing LOWDIN files \n"
+	sed "11s|POTENTIALCHANGE|"P$STEP"|g" $TEMPLATE_ONLY_P > $LOWDIN_FILE_POSI
+	
+	sed "5s|POS|"${DIST[$i]}"|g" $TEMPLATE_USUAL_CALC > $LOWDIN_FILE_USUAL
+	sed -i "6s|POS|"${DIST[$i]}"|g" $LOWDIN_FILE_USUAL
+	sed -i "7s|POS|"${DIST[$i]}"|g" $LOWDIN_FILE_USUAL
+	
+
+
+#	echo -e "Running LOWDIN calculation \n"
+
+#	lowdin2 -i $LOWDIN_FILE
+	
+#	echo -e "Extracting PA \n"
+#	ENERGY=$(awk '/Eigenvalues for: POSITRON/ {getline; getline; getline; print $2}' $LOWDIN_OUTPUT) 
+#	echo -e "$ENERGY \n"
+
+#	echo "$STEP $ENERGY" >> $5
+
+
+#for i in "${!DIST[@]}"; do
+#	echo "${DIST[$i]}"
+done

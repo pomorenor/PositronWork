@@ -1,0 +1,57 @@
+
+&LowdinParameters
+	LowdinParameters_UNITS ="BOHR" 
+	LowdinParameters_CONVERGENCEMETHOD =1 
+	LowdinParameters_OVERLAPEIGENTHRESHOLD =1E-6 
+	LowdinParameters_SCFGHOSTSPECIES ="POSITRON" 
+	LowdinParameters_HFPRINTEIGENVALUES =T 
+	LowdinParameters_TOTALENERGYTOLERANCE =1E-9 
+/
+
+&InputTasks
+	InputTasks_METHOD = "RHF"
+/
+
+&InputParticle
+	InputParticle_name = "E+"
+	InputParticle_basisSetName = "GRIBAKIN-10S4P2D"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "E+"
+	InputParticle_basisSetName = "GRIBAKIN-10S4P2D"
+	InputParticle_addParticles = -1
+	InputParticle_origin = 1.300000000000E+01 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "BE"
+	InputParticle_basisSetName = "DIRAC"
+	InputParticle_origin = 0.000000000000E+00 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputParticle
+	InputParticle_name = "BE"
+	InputParticle_basisSetName = "DIRAC"
+	InputParticle_origin = 1.300000000000E+01 0.000000000000E+00 0.000000000000E+00 
+/
+
+&InputSystem
+	InputSystem_numberOfParticles = 4
+	InputSystem_numberOfExternalPots =  1
+	InputSystem_numberOfInterPots =  0
+	InputSystem_numberOfLJCenters =  0
+	InputSystem_numberOfOutputs =  1
+	InputSystem_numberOfSpeciesInCI =  0
+
+/
+
+&ExternalPot
+	ExternalPot_name = "T63"
+	ExternalPot_specie =  "E+" 
+/
+
+&Output
+	Output_type = "WFNFILE" 
+/

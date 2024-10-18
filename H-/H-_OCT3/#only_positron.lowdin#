@@ -1,0 +1,20 @@
+
+GEOMETRY
+        e-(H) 6-311++G.d.p 0 0 0 addParticles=1
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+CONTROL
+	units="BOHRS"
+	readCoefficients=T
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	readCoefficients=T
+	freezeElectronicOrbitals=T
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
