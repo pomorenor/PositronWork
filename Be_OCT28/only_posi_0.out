@@ -1,0 +1,64 @@
+Begin job by input: only_posi_0.lowdin, for user:   at  mar 29 oct 2024 14:38:02 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	E+	GRIBAKIN-10S4P2D 0.0 0.0 0.0
+	E+	GRIBAKIN-10S4P2D {} 0.0 0.0 addParticles=-1 
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+EXTERPOTENTIAL
+	E+ VPC0
+END EXTERPOTENTIAL
+
+CONTROL
+	units="BOHRS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Tue Oct 29 14:38:02 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... 
+ ### ERROR ###
+    Debug description: ExternalPotential module at Load function.
+    Description: The ExternalPotential: VPC0 for: E+ was not found!
+ ###
+ 
+
+ Elapsed Time :   9.57E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Tue Oct 29 14:38:02 2024
+-rw-rw-r-- 1 pohl pohl  369 oct 29 14:38 only_posi_0
+-rw-rw-r-- 1 pohl pohl 1.1K oct 29 14:38 only_posi_0.aux
+-rw-rw-r-- 1 pohl pohl  374 oct 29 14:38 only_posi_0.lowdin
+-rw-rw-r-- 1 pohl pohl 1.9K oct 29 14:38 only_posi_0.out
+-rw-rw-r-- 1 pohl pohl  37K oct 29 14:38 only_posi_0.vec

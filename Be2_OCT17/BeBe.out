@@ -1,0 +1,691 @@
+Begin job by input: BeBe.lowdin, for user:   at  mar 29 oct 2024 15:50:36 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	Be	Dirac	0.0 0.0 0.0
+	e-(Be)	6-311++G.d.p 0.0 0.0 0.0
+	Be	Dirac	4.636 0.0 0.0
+	e-(Be)	6-311++G.d.p	4.636 0.0 0.0 
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+CONTROL
+	units="BOHRS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Tue Oct 29 15:50:36 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  RHF
+         NUMBER OF CORES:     4
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-08
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ 
+  MOLECULAR SYSTEM: BeBe
+ -----------------
+ 
+    DESCRIPTION   : BeBe
+    CHARGE        :   0
+    PUNTUAL GROUP : NONE
+ 
+ 
+  INFORMATION OF PARTICLES :
+ =========================
+         Total number of particles   =      10
+         Number of quantum particles =       8
+         Number of puntual charges   =       2
+         Number of quantum species   =       1
+ 
+                 INFORMATION OF QUANTUM SPECIES 
+    ----------------------------------------------------------------------
+         ID      Symbol            mass     charge      omega     spin     multiplicity
+    ----------------------------------------------------------------------
+         1             E-         1.0000     -1.00      0.00      0.50      1.00
+ 
+                   CONSTANTS OF COUPLING 
+      ------------------------------------------------------------
+              Symbol      kappa        eta     lambda occupation
+      ------------------------------------------------------------
+                  E-      -1.00       2.00       2.00       4.00
+ 
+                   BASIS SET FOR SPECIES 
+      ------------------------------------------------------------
+           Symbol          N. Basis     N. Particles     Basis Set
+      ------------------------------------------------------------
+                 E-           20                8     6-311++G.D
+ 
+                                ATOMIC BASIS
+         ------------------------------------------------------------
+          PRIMITIVE   SHELL             EXPONENT         COEFFICIENT 
+         ------------------------------------------------------------
+ 
+    BEGIN DESCRIPTION OF BASIS FOR:    E-
+    ==============================
+ 
+ 
+            BE BASIS SET:   6-311++G.D.P
+             1         S             1682.80000000          0.00228574
+             2         S              251.71500000          0.01759380
+             3         S               57.41160000          0.08633150
+             4         S               16.51710000          0.28183500
+             5         S                4.85364000          0.64059400
+             6         S                0.62686300          0.14446700
+             1         S                8.30938000          0.10862100
+             2         S                1.74075000          0.92730100
+             3         S                0.48581600         -0.00297169
+             1         P                8.30938000          0.03613440
+             2         P                1.74075000          0.21695800
+             3         P                0.48581600          0.84183900
+             1         S                0.16361300          1.00000000
+             1         P                0.16361300          1.00000000
+             1         S                0.05672850          1.00000000
+             1         P                0.05672850          1.00000000
+             1         S                0.02070000          1.00000000
+             1         P                0.02070000          1.00000000
+             1         D                0.25500000          1.00000000
+ 
+            BE BASIS SET:   6-311++G.D.P
+             1         S             1682.80000000          0.00228574
+             2         S              251.71500000          0.01759380
+             3         S               57.41160000          0.08633150
+             4         S               16.51710000          0.28183500
+             5         S                4.85364000          0.64059400
+             6         S                0.62686300          0.14446700
+             1         S                8.30938000          0.10862100
+             2         S                1.74075000          0.92730100
+             3         S                0.48581600         -0.00297169
+             1         P                8.30938000          0.03613440
+             2         P                1.74075000          0.21695800
+             3         P                0.48581600          0.84183900
+             1         S                0.16361300          1.00000000
+             1         P                0.16361300          1.00000000
+             1         S                0.05672850          1.00000000
+             1         P                0.05672850          1.00000000
+             1         S                0.02070000          1.00000000
+             1         P                0.02070000          1.00000000
+             1         D                0.25500000          1.00000000
+    ... END DESCRIPTION OF BASIS
+ 
+ 
+  END INFORMATION OF PARTICLES
+ 
+ 
+  INFORMATION OF THE QUANTUM SYSTEM 
+     ---------------------------------------------------------------------
+                 ID     Occupied Orbitals     Basis size
+     ---------------------------------------------------------------------
+                 E-            4               46
+ 
+  END INFORMATION OF QUANTUM SYSTEM
+ 
+                       INITIAL GEOMETRY: AMSTRONG
+                 -----------------------------------
+                       <x>                 <y>                 <z>
+      E-BE        0.0000000000        0.0000000000        0.0000000000
+      E-BE        2.4532657275        0.0000000000        0.0000000000
+        BE        0.0000000000        0.0000000000        0.0000000000
+        BE        2.4532657275        0.0000000000        0.0000000000
+ 
+                     MATRIX OF DISTANCE: ANGSTROM
+                 -----------------------------------
+                          BE(1)          BE(2)     
+ 
+        BE(1)            0.000000       2.453266
+        BE(2)            2.453266       0.000000
+ 
+--------------------------------------------------------------------------------
+** PROGRAM: SCF (Hartree Fock).     Author: S.A. Gonzalez, E. Posada, F. Moncada
+--------------------------------------------------------------------------------
+INFO: RUNNING IN RHF MODE.
+ 
+----------------------------------------------------------------------
+** PROGRAM INTS                          Author: E. F. Posada, 2013   
+----------------------------------------------------------------------
+INFO: RUNNING IN ONE_PARTICLE MODE.
+ 
+ Number of Overlap integrals for species E-:   2116
+ Number of Kinetic integrals for species E-:   2116
+ Number of Nuclear integrals for species E-:   2116
+ Number of Moment integrals for species E-:   6348
+ 
+** TOTAL CPU Time INTS :      0.120 (s)
+** TOTAL Elapsed Time INTS :      0.026 (s)
+ 
+       Usign  HCORE density guess for species:         E-
+     number of         E-     particles in guess density matrix:     8.000000
+ Number of unique integrals for species: 1 = 154245
+ 
+ TWO-BODY INTEGRAL SETUP: 
+------------------------- 
+ Storage:   DISK
+ Scheme: LIBINT
+ Stack size:  30000
+ 
+ LIBINT library, Fermann, J. T.; Valeev, F. L. 2010                   
+ LOWDIN-LIBINT Implementation V. 2.1  Posada E. F. ; Reyes A. 2016   
+ ----------------------------------------------------------------------
+
+*** TOTAL CPU time intra-species integrals :      0.333 (s)
+*** TOTAL elapsed time intra-species integrals :      0.084 (s)
+
+INFO: RUNNING SCHEME SIMULTANEOUS
+ 
+ Begin Multi-Species SCF calculation:
+ 
+ --------------------------------------------------------------------------------------------------
+      Iteration                   Energy            Energy Change           Density Change
+ --------------------------------------------------------------------------------------------------
+              1         -26.797681135321          26.797681135321           1.528849947222
+              2         -28.180438521753           1.382757386431           1.494122933212
+              3         -29.105265685246           0.924827163493           0.035911886571
+              4         -29.128519512547           0.023253827301           0.008959592719
+              5         -29.131368434359           0.002848921812           0.002760293884
+              6         -29.131808446188           0.000440011829           0.000919237305
+              7         -29.131888074215           0.000079628027           0.000355819875
+              8         -29.131904320656           0.000016246441           0.000158875578
+              9         -29.131907901616           0.000003580960           0.000076151598
+             10         -29.131908726142           0.000000824526           0.000037323300
+             11         -29.131908920374           0.000000194232           0.000018374643
+             12         -29.131908966656           0.000000046282           0.000009043916
+             13         -29.131908977747           0.000000011091           0.000004447088
+             14         -29.131908980412           0.000000002665           0.000002185059
+             15         -29.131908981053           0.000000000641           0.000001073118
+ Total energy converged after  15 global iterations                                                  
+ 
+ ...end Multi-Species SCF calculation
+ 
+ 
+ Begin SCF calculation by: E-
+ -------------------------
+ 
+ -----------------------------------------------------------------------------------
+ Iteration                   Energy           Density Change         DIIS Error 
+ -----------------------------------------------------------------------------------
+    1         -34.260866851796           1.494122933212                 -- 
+    2         -32.667228737868           0.035911886571                 -- 
+    3         -32.595639250012           0.008959592719                 -- 
+    4         -32.588512631288           0.002760293884                 -- 
+    5         -32.585468862421           0.000919237305                 -- 
+    6         -32.584164528084           0.000355819875                 -- 
+    7         -32.583603799102           0.000158875578                 -- 
+    8         -32.583359750291           0.000076151598                 -- 
+    9         -32.583251591525           0.000037323300                 -- 
+   10         -32.583202702750           0.000018374643                 -- 
+   11         -32.583180193275           0.000009043916                 -- 
+   12         -32.583169665235           0.000004447088                 -- 
+   13         -32.583164678655           0.000002185059                 -- 
+   14         -32.583162293761           0.000001073118                 -- 
+ 
+ ... end SCF calculation
+ 
+  EIGENVALUES AND EIGENVECTORS: 
+ ==============================
+ 
+ 
+  Eigenvalues for: E-
+ -----------------
+ 
+    1          -4.731377586945
+    2          -4.731347335990
+    3          -0.395680189691
+    4          -0.242959102590
+    5           0.007833201638
+    6           0.011312676569
+    7           0.011312676569
+    8           0.048871121235
+    9           0.055370038493
+   10           0.055370038493
+   11           0.063464552258
+   12           0.076664639047
+   13           0.078290601133
+   14           0.078290601133
+   15           0.105566321178
+   16           0.127922851899
+   17           0.127922851899
+   18           0.203208319992
+   19           0.299452225897
+   20           0.327737151036
+   21           0.332559588826
+   22           0.332559588826
+   23           0.360184768626
+   24           0.360184768626
+   25           0.378310279231
+   26           0.422909067035
+   27           0.607432546020
+   28           0.607432546020
+   29           0.646181519506
+   30           0.646181519506
+   31           0.731389605672
+   32           0.731389605672
+   33           0.794229624668
+   34           0.901807358815
+   35           0.901807358815
+   36           1.033956537246
+   37           1.185656538821
+   38           1.185656538821
+   39           1.237538592813
+   40           1.237538592813
+   41           1.270626403422
+   42           1.341112309614
+   43           1.442000408785
+   44           1.665210680538
+   45          10.113717270028
+   46          10.146722418162
+ 
+  end of eigenvalues 
+ 
+  Occupied Eigenvectors for: E-
+ --------------------------- 
+ 
+                          -4.7314        -4.7313        -0.3957        -0.2430   
+ 
+    1     BE     S       0.421566       0.421622      -0.077340      -0.075536
+    2     BE     S       0.315517       0.315595      -0.128765      -0.128875
+    3     BE    Px       0.000243       0.000248       0.040686      -0.041272
+    4     BE    Py       0.000000       0.000000       0.000000       0.000000
+    5     BE    Pz       0.000000       0.000000      -0.000000       0.000000
+    6     BE     S      -0.002774      -0.003212       0.401157       0.401202
+    7     BE    Px       0.000035      -0.000464       0.074194      -0.060340
+    8     BE    Py      -0.000000       0.000000       0.000000       0.000000
+    9     BE    Pz       0.000000      -0.000000      -0.000000       0.000000
+   10     BE     S       0.000957       0.001971       0.234457       0.510450
+   11     BE    Px       0.000027       0.000564       0.005335      -0.011050
+   12     BE    Py       0.000000       0.000000      -0.000000      -0.000000
+   13     BE    Pz      -0.000000       0.000000       0.000000      -0.000000
+   14     BE     S      -0.000245      -0.002935      -0.003157       0.066658
+   15     BE    Px      -0.000077      -0.000920      -0.003301      -0.003334
+   16     BE    Py      -0.000000      -0.000000      -0.000000       0.000000
+   17     BE    Pz       0.000000      -0.000000      -0.000000       0.000000
+   18     BE   Dxx       0.000484       0.000138       0.017417      -0.007838
+   19     BE   Dxy       0.000000      -0.000000      -0.000000      -0.000000
+   20     BE   Dxz      -0.000000      -0.000000      -0.000000       0.000000
+   21     BE   Dyy       0.000285       0.000281      -0.007536       0.003838
+   22     BE   Dyz      -0.000000       0.000000       0.000000      -0.000000
+   23     BE   Dzz       0.000285       0.000281      -0.007536       0.003838
+   24     BE     S       0.421566      -0.421622      -0.077340       0.075536
+   25     BE     S       0.315517      -0.315595      -0.128765       0.128875
+   26     BE    Px      -0.000243       0.000248      -0.040686      -0.041272
+   27     BE    Py      -0.000000       0.000000       0.000000      -0.000000
+   28     BE    Pz       0.000000      -0.000000      -0.000000      -0.000000
+   29     BE     S      -0.002774       0.003212       0.401157      -0.401202
+   30     BE    Px      -0.000035      -0.000464      -0.074194      -0.060340
+   31     BE    Py       0.000000       0.000000      -0.000000      -0.000000
+   32     BE    Pz      -0.000000      -0.000000       0.000000       0.000000
+   33     BE     S       0.000957      -0.001971       0.234457      -0.510450
+   34     BE    Px      -0.000027       0.000564      -0.005335      -0.011050
+   35     BE    Py      -0.000000      -0.000000       0.000000       0.000000
+   36     BE    Pz       0.000000      -0.000000      -0.000000       0.000000
+   37     BE     S      -0.000245       0.002935      -0.003157      -0.066658
+   38     BE    Px       0.000077      -0.000920       0.003301      -0.003334
+   39     BE    Py       0.000000       0.000000      -0.000000       0.000000
+   40     BE    Pz      -0.000000      -0.000000       0.000000       0.000000
+   41     BE   Dxx       0.000484      -0.000138       0.017417       0.007838
+   42     BE   Dxy      -0.000000       0.000000      -0.000000       0.000000
+   43     BE   Dxz      -0.000000      -0.000000      -0.000000      -0.000000
+   44     BE   Dyy       0.000285      -0.000281      -0.007536      -0.003838
+   45     BE   Dyz      -0.000000      -0.000000       0.000000      -0.000000
+   46     BE   Dzz       0.000285      -0.000281      -0.007536      -0.003838
+ 
+ 
+  end of eigenvectors 
+ 
+  END OF EIGENVALUES AND EIGENVECTORS
+ 
+ 
+  COMPONENTS OF KINETIC ENERGY: 
+ -----------------------------
+ 
+                  E- Kinetic energy =           29.188212312117
+                                     _________________________
+               Total kinetic energy =           29.188212312117
+ 
+  COMPONENTS OF POTENTIAL ENERGY: 
+ -------------------------------
+ 
+          Fixed potential energy    =            3.451251078516
+ 
+  Quantum/Fixed interaction energy: 
+ ----------------------------------
+ 
+          E-/Fixed interact. energy =          -74.151808469206
+                                     _________________________
+               Total Q/Fixed energy =          -74.151808469206
+ 
+  Coulomb energy: 
+ ------------------
+ 
+               E-/E- Hartree energy =           17.731170359479
+                                     _________________________
+               Total Hartree energy =           17.731170359479
+ 
+  Exchange(HF) energy: 
+ ----------------------
+ 
+                 E- Exchange energy =           -5.350734262114
+                                     _________________________
+              Total Exchange energy =           -5.350734262114
+ 
+  TOTAL ENERGY COMPONENTS: 
+ ==========================
+ 
+          TOTAL KINETIC ENERGY      =           29.188212312117
+          TOTAL POTENTIAL ENERGY    =          -58.320121293324
+                                     _________________________
+                       TOTAL ENERGY =          -29.131908981207
+ 
+                 VIRIAL RATIO (V/T) =            1.998071025032
+ 
+ 
+  END ENERGY COMPONENTS
+ 
+ 
+** TOTAL CPU Time SCF :      0.600 (s)
+** TOTAL Elapsed Time SCF :      0.166 (s)
+ 
+ We are calculating properties for E- in the HF/KS ground state
+ 
+  POPULATION ANALYSES: 
+ ====================
+ 
+ MULLIKEN Population: for E-        
+ ---------------------
+ 
+                                    
+ 
+    1     BE     S       1.166034
+    2     BE     S       0.824178
+    3     BE    Px       0.026084
+    4     BE    Py       0.000000
+    5     BE    Pz       0.000000
+    6     BE     S       1.000211
+    7     BE    Px       0.093181
+    8     BE    Py      -0.000000
+    9     BE    Pz       0.000000
+   10     BE     S       0.838783
+   11     BE    Px       0.017093
+   12     BE    Py       0.000000
+   13     BE    Pz      -0.000000
+   14     BE     S       0.023317
+   15     BE    Px       0.001541
+   16     BE    Py      -0.000000
+   17     BE    Pz       0.000000
+   18     BE   Dxx       0.017638
+   19     BE   Dxy       0.000000
+   20     BE   Dxz       0.000000
+   21     BE   Dyy      -0.004030
+   22     BE   Dyz       0.000000
+   23     BE   Dzz      -0.004030
+   24     BE     S       1.166034
+   25     BE     S       0.824178
+   26     BE    Px       0.026084
+   27     BE    Py       0.000000
+   28     BE    Pz       0.000000
+   29     BE     S       1.000211
+   30     BE    Px       0.093181
+   31     BE    Py       0.000000
+   32     BE    Pz       0.000000
+   33     BE     S       0.838783
+   34     BE    Px       0.017093
+   35     BE    Py      -0.000000
+   36     BE    Pz       0.000000
+   37     BE     S       0.023317
+   38     BE    Px       0.001541
+   39     BE    Py       0.000000
+   40     BE    Pz      -0.000000
+   41     BE   Dxx       0.017638
+   42     BE   Dxy       0.000000
+   43     BE   Dxz       0.000000
+   44     BE   Dyy      -0.004030
+   45     BE   Dyz       0.000000
+   46     BE   Dzz      -0.004030
+ 
+                           __________
+              Total =        8.000000
+ 
+  Atomic MULLIKEN Population: for E-        
+            BE               4.000000
+            BE               4.000000
+ 
+ ...end of MULLIKEN Population
+ 
+ 
+ END POPULATION ANALYSES 
+ 
+ 
+  POPULATION ANALYSES: 
+ ====================
+ 
+ LOWDIN Population: for E-        
+ ---------------------
+ 
+                                    
+ 
+    1     BE     S       1.100963
+    2     BE     S       0.875475
+    3     BE    Px       0.022735
+    4     BE    Py       0.000000
+    5     BE    Pz       0.000000
+    6     BE     S       0.531042
+    7     BE    Px       0.093371
+    8     BE    Py      -0.000000
+    9     BE    Pz       0.000000
+   10     BE     S       0.382150
+   11     BE    Px       0.193939
+   12     BE    Py       0.000000
+   13     BE    Pz       0.000000
+   14     BE     S       0.107010
+   15     BE    Px       0.095009
+   16     BE    Py       0.000000
+   17     BE    Pz       0.000000
+   18     BE   Dxx       0.208216
+   19     BE   Dxy       0.000000
+   20     BE   Dxz       0.000000
+   21     BE   Dyy       0.195046
+   22     BE   Dyz       0.000000
+   23     BE   Dzz       0.195046
+   24     BE     S       1.100963
+   25     BE     S       0.875475
+   26     BE    Px       0.022735
+   27     BE    Py       0.000000
+   28     BE    Pz       0.000000
+   29     BE     S       0.531042
+   30     BE    Px       0.093371
+   31     BE    Py       0.000000
+   32     BE    Pz       0.000000
+   33     BE     S       0.382150
+   34     BE    Px       0.193939
+   35     BE    Py       0.000000
+   36     BE    Pz       0.000000
+   37     BE     S       0.107010
+   38     BE    Px       0.095009
+   39     BE    Py       0.000000
+   40     BE    Pz       0.000000
+   41     BE   Dxx       0.208216
+   42     BE   Dxy       0.000000
+   43     BE   Dxz      -0.000000
+   44     BE   Dyy       0.195046
+   45     BE   Dyz       0.000000
+   46     BE   Dzz       0.195046
+ 
+                           __________
+              Total =        8.000000
+ 
+  Atomic LOWDIN Population: for E-        
+            BE               4.000000
+            BE               4.000000
+ 
+ ...end of LOWDIN Population
+ 
+ 
+ END POPULATION ANALYSES 
+ 
+ 
+  EXPECTED POSITIONS OF QUANTUM SPECIES:
+ ======================
+ 
+ POSITIONS IN ANGSTROMS
+ ------
+ 
+                        <x>      <y>      <z>         
+                 E-   9.8131  -0.0000  -0.0000
+ 
+ END EXPECTED POSITIONS
+ 
+ 
+  ELECTROSTATIC MOMENTS:
+ ======================
+ 
+ 
+ DIPOLE: (A.U.)
+ ------
+ 
+                           <Dx>         <Dy>         <Dz>          |D|
+                 E- -18.54400000   0.00000000   0.00000000
+    Point charges:   18.54400000   0.00000000   0.00000000
+                     ____________________________
+      Total Dipole:   0.00000000   0.00000000   0.00000000   0.00000000
+ 
+ DIPOLE: (DEBYE)
+ ------
+ 
+                           <Dx>         <Dy>         <Dz>          |D|
+                 E- -47.13414041   0.00000000   0.00000000
+    Point charges:   47.13414041   0.00000000   0.00000000
+                     ____________________________
+      Total Dipole:   0.00000000   0.00000000   0.00000000   0.00000000
+ 
+ QUADRUPOLE NON-TRACELESS: (DEBYE ANGS)
+ ------
+ 
+                           <xx>         <yy>         <zz>         <xy>         <xz>         <yz>
+                 E-  -98.38626374  -14.62455530  -14.62455530    0.00000000    0.00000000   -0.00000000
+    Point charges:   115.63255807    0.00000000    0.00000000    0.00000000    0.00000000    0.00000000
+  Total Quadrupole:   17.24629433  -14.62455530  -14.62455530    0.00000000    0.00000000   -0.00000000
+                     ____________________________
+ 
+ END ELECTROSTATIC MOMENTS
+ 
+
+
+ *****************************************************************************
+                               *  Molden2AIM  *
+                          Version 3.1.0,  02/25/2015
+           It converts the format from MOLDEN to AIM-WFN and NBO-47
+ *****************************************************************************
+
+
+ The MOLDEN file BeBe.E-.molden has been found.
+
+
+ >>> Cartesian basis functions are used.
+
+ >>> SUMMARY
+
+     Number of atoms:                                 2
+     Maximum angular momentum:                        2
+     Number of primitive Cartesian functions:        72
+     Number of contracted Cartesian functions:       46
+     Number of primitive spherical functions:        70
+     Number of contracted spherical functions:       44
+     Number of orbitals to be printed:               46
+ =============================================================================
+
+
+  A new Molden file is generated successfully!
+  File Name = BeBe.E-_new.molden
+ =============================================================================
+
+
+  A WFN file is generated successfully!
+  File Name = BeBe.E-.wfn
+
+  Please use
+   AIM2000, AIMALL, AIMPAC, AIMPAC2, AIM-UC, CheckDen, DGrid, MORPHY,
+   MultiWFN, PAMoC, ProMolden, TopChem, TopMoD, or XAIM
+
+  to analyse the electron density distribution.
+ =============================================================================
+ --------------------------------------------------------
+ WFNFILE                1
+          FileName: BeBe.E-.wfn       and .molden                                                                       
+ --------------------------------------------------------
+ 
+ 
+** TOTAL CPU Time Outputs :      0.119 (s)
+** TOTAL Elapsed Time Outputs :      0.029 (s)
+ 
+
+  TOTAL CPU Time:      0.238 (s)
+ TOTAL Wall Time:      0.299 (s)
+  Elapsed Time:   0h  0m  0s 301ms
+LOWDIN execution terminated normally at : Tue Oct 29 15:50:36 2024
+-rw-rw-r-- 1 pohl pohl 1,4M oct 29 15:50 0E-.ints
+-rw-rw-r-- 1 pohl pohl 1,4M oct 29 15:50 1E-.ints
+-rw-rw-r-- 1 pohl pohl 1,4M oct 29 15:50 2E-.ints
+-rw-rw-r-- 1 pohl pohl 1,4M oct 29 15:50 3E-.ints
+-rw-rw-r-- 1 pohl pohl  388 oct 29 15:50 BeBe
+-rw-rw-r-- 1 pohl pohl 1,3K oct 29 15:50 BeBe.aux
+-rw-rw-r-- 1 pohl pohl  50K oct 29 15:50 BeBe.E-.molden
+-rw-rw-r-- 1 pohl pohl  59K oct 29 15:50 BeBe.E-_new.molden
+-rw-rw-r-- 1 pohl pohl  59K oct 29 15:50 BeBe.E-.wfn
+-rw-rw-r-- 1 pohl pohl  393 oct 29 15:50 BeBe.lowdin
+-rw-rw-r-- 1 pohl pohl  27K oct 29 15:50 BeBe.out
+-rw-rw-r-- 1 pohl pohl  18K oct 29 15:50 BeBe.vec
+-rw-rw-r-- 1 pohl pohl   60 oct 29 15:50 gepol.inp
+-rw-rw-r-- 1 pohl pohl   91 oct 29 15:50 gepol.xyzr
+-rw-rw-r-- 1 pohl pohl 4,4K oct 29 15:50 lowdin.bas
+-rw-rw-r-- 1 pohl pohl  16K oct 29 15:50 lowdin.dat
+-rw-rw-r-- 1 pohl pohl 202K oct 29 15:50 lowdin.opints
+-rw-rw-r-- 1 pohl pohl  14K oct 29 15:50 lowdin.sys
+-rw-rw-r-- 1 pohl pohl 184K oct 29 15:50 lowdin.wfn
+-rw-rw-r-- 1 pohl pohl 1,7K oct 29 15:50 m2a.ini
