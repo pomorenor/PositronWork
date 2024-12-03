@@ -1,0 +1,70 @@
+Begin job by input: usual_3.lowdin, for user:   at  jue 28 nov 2024 15:37:46 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	Xe	Dirac	0.0 0.0 0.0
+	e-(Xe)	6-311G.D.P 0.0 0.0 0.0
+	E+	GRIBAKIN-10S4P2D 0.0 0.0 0.0
+	Xe	Dirac	6 0.0 0.0
+	e-(Xe)	6-311G.D.P	6 0.0 0.0
+	E+	GRIBAKIN-10S4P2D 6 0.0 0.0 addParticles=-1 
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+EXTERPOTENTIAL
+	E- GRIBAKIN0
+	E+ XE3
+END EXTERPOTENTIAL
+
+CONTROL
+	units="BOHRS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Thu Nov 28 15:37:46 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... 
+ ### ERROR ###
+    Debug description: In ElementalParticle at load function.
+    Description: Elemental particle: XE NOT found!!
+ ###
+ 
+
+ Elapsed Time :   5.36E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Thu Nov 28 15:37:46 2024
+-rw-rw-r-- 1 pohl pohl  483 nov 28 15:37 usual_3
+-rw-rw-r-- 1 pohl pohl 107K nov 28 15:37 usual_30.vec
+-rw-rw-r-- 1 pohl pohl 1.8K nov 28 15:37 usual_3.aux
+-rw-rw-r-- 1 pohl pohl  488 nov 28 15:37 usual_3.lowdin
+-rw-rw-r-- 1 pohl pohl 2.0K nov 28 15:37 usual_3.out
+-rw-rw-r-- 1 pohl pohl 107K nov 28 15:37 usual_3.vec

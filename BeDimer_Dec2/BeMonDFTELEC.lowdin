@@ -1,0 +1,26 @@
+
+GEOMETRY
+	Be	Dirac	0.0 0.0 0.0
+	e-(Be)	6-311++G.d.p 0.0 0.0 0.0
+END GEOMETRY
+
+TASKS
+        method = "RKS"
+END TASKS
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+
+CONTROL
+	electronExchangeCorrelationFunctional="B3LYP"
+	units="BOHRS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+

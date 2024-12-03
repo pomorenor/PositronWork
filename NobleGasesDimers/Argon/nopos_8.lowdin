@@ -1,0 +1,22 @@
+
+GEOMETRY
+	Ar	Dirac	0.0 0.0 0.0
+	e-(Ar)	CC-PVTZ 0.0 0.0 0.0
+	Be	Dirac	3.4 0.0 0.0
+	e-(Ar)	CC-PVTZ	3.4 0.0 0.0 
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+CONTROL
+	units="BOHRS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+

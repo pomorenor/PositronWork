@@ -1,0 +1,24 @@
+
+GEOMETRY
+        e-(Be) 6-31G  0 0 0
+        Be     dirac	   0 0 0
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+CONTROL
+	readFchk=T
+	noSCF=T
+	units="BOHRS"
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+

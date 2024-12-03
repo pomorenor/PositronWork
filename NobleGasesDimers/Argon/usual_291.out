@@ -1,0 +1,70 @@
+Begin job by input: usual_291.lowdin, for user:   at  mié 27 nov 2024 15:46:41 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	Ar	Dirac	0.0 0.0 0.0
+	e-(Ar)	6-311++G.d.p 0.0 0.0 0.0
+	E+	GRIBAKIN-10S4P2D 0.0 0.0 0.0
+	Ar	Dirac	60.0 0.0 0.0
+	e-(Ar)	6-311++G.d.p	60.0 0.0 0.0
+	E+	GRIBAKIN-10S4P2D 60.0 0.0 0.0 addParticles=-1 
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+EXTERPOTENTIAL
+	E- GRIBAKIN0
+	E+ AR291
+END EXTERPOTENTIAL
+
+CONTROL
+	units="BOHRS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+Note: The following floating-point exceptions are signalling: IEEE_DIVIDE_BY_ZERO
+ LOWDIN execution started at : Wed Nov 27 15:46:41 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... 
+ ### ERROR ###
+    Debug description: ExternalPotential module at Load function.
+    Description: The ExternalPotential file: AR291 was not found!
+ ###
+ 
+
+ Elapsed Time :   1.02E-01 (s)
+ lowdin execution terminated ABNORMALLY at : Wed Nov 27 15:46:41 2024
+-rw-rw-r-- 1 pohl pohl  498 nov 27 15:46 usual_291
+-rw-rw-r-- 1 pohl pohl 1.8K nov 27 15:46 usual_291.aux
+-rw-rw-r-- 1 pohl pohl  503 nov 27 15:46 usual_291.lowdin
+-rw-rw-r-- 1 pohl pohl 2.1K nov 27 15:46 usual_291.out
+-rw-rw-r-- 1 pohl pohl  68K nov 27 15:46 usual_291.vec

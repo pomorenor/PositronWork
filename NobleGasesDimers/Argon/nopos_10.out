@@ -1,0 +1,301 @@
+Begin job by input: nopos_10.lowdin, for user:   at  mié 27 nov 2024 14:37:15 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+	Ar	Dirac	0.0 0.0 0.0
+	e-(Ar)	CC-PVTZ 0.0 0.0 0.0
+	Be	Dirac	3.8 0.0 0.0
+	e-(Ar)	CC-PVTZ	3.8 0.0 0.0 
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+CONTROL
+	units="BOHRS"
+	readCoefficients=F
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	SCFGhostSpecies="POSITRON"
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Wed Nov 27 14:37:15 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  RHF
+         NUMBER OF CORES:     4
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-08
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ 
+  MOLECULAR SYSTEM: nopos_10
+ -----------------
+ 
+    DESCRIPTION   : nopos_10
+    CHARGE        : -14
+    PUNTUAL GROUP : NONE
+ 
+ 
+  INFORMATION OF PARTICLES :
+ =========================
+         Total number of particles   =      38
+         Number of quantum particles =      36
+         Number of puntual charges   =       2
+         Number of quantum species   =       1
+ 
+                 INFORMATION OF QUANTUM SPECIES 
+    ----------------------------------------------------------------------
+         ID      Symbol            mass     charge      omega     spin     multiplicity
+    ----------------------------------------------------------------------
+         1             E-         1.0000     -1.00      0.00      0.50      1.00
+ 
+                   CONSTANTS OF COUPLING 
+      ------------------------------------------------------------
+              Symbol      kappa        eta     lambda occupation
+      ------------------------------------------------------------
+                  E-      -1.00       2.00       2.00      18.00
+ 
+                   BASIS SET FOR SPECIES 
+      ------------------------------------------------------------
+           Symbol          N. Basis     N. Particles     Basis Set
+      ------------------------------------------------------------
+                 E-           24               36        CC-PVTZ
+ 
+                                ATOMIC BASIS
+         ------------------------------------------------------------
+          PRIMITIVE   SHELL             EXPONENT         COEFFICIENT 
+         ------------------------------------------------------------
+ 
+    BEGIN DESCRIPTION OF BASIS FOR:    E-
+    ==============================
+ 
+ 
+            AR BASIS SET:        CC-PVTZ
+             1         S           545000.00000000          0.00004558
+             2         S            81640.00000000          0.00035411
+             3         S            18580.00000000          0.00185797
+             4         S             5261.00000000          0.00776851
+             5         S             1717.00000000          0.02742320
+             6         S              619.90000000          0.08238360
+             7         S              241.60000000          0.20123000
+             8         S               99.79000000          0.35678100
+             9         S               43.15000000          0.34956300
+            10         S               19.14000000          0.11826600
+            11         S                7.48800000          0.00560190
+            12         S                3.20500000          0.00048347
+            13         S                0.52040000          0.00002920
+             1         S           545000.00000000         -0.00001296
+             2         S            81640.00000000         -0.00010043
+             3         S            18580.00000000         -0.00052958
+             4         S             5261.00000000         -0.00221396
+             5         S             1717.00000000         -0.00796845
+             6         S              619.90000000         -0.02458030
+             7         S              241.60000000         -0.06577980
+             8         S               99.79000000         -0.13794200
+             9         S               43.15000000         -0.20163000
+            10         S               19.14000000         -0.04128340
+            11         S                7.48800000          0.48468000
+            12         S                3.20500000          0.57922400
+            13         S                0.52040000         -0.00727553
+             1         S           545000.00000000          0.00000405
+             2         S            81640.00000000          0.00003137
+             3         S            18580.00000000          0.00016565
+             4         S             5261.00000000          0.00069166
+             5         S             1717.00000000          0.00249790
+             6         S              619.90000000          0.00771074
+             7         S              241.60000000          0.02087140
+             8         S               99.79000000          0.04439650
+             9         S               43.15000000          0.06802240
+            10         S               19.14000000          0.01413500
+            11         S                7.48800000         -0.20748900
+            12         S                3.20500000         -0.42504500
+            13         S                0.52040000          0.73362700
+             1         S                1.19600000          1.00000000
+             1         S                0.19540000          1.00000000
+             1         P              761.80000000          0.00236976
+             2         P              180.20000000          0.01901990
+             3         P               57.50000000          0.08808070
+             4         P               21.24000000          0.25637700
+             5         P                8.38800000          0.43871100
+             6         P                3.41600000          0.34756900
+             7         P                0.45230000         -0.00523882
+             1         P              761.80000000         -0.00066721
+             2         P              180.20000000         -0.00532717
+             3         P               57.50000000         -0.02554940
+             4         P               21.24000000         -0.07571970
+             5         P                8.38800000         -0.14113300
+             6         P                3.41600000         -0.09327680
+             7         P                0.45230000          0.56245000
+             1         P                1.20600000          1.00000000
+             1         P                0.15450000          1.00000000
+             1         D                0.41000000          1.00000000
+             1         D                1.25400000          1.00000000
+             1         F                0.89000000          1.00000000
+ 
+            AR BASIS SET:        CC-PVTZ
+             1         S           545000.00000000          0.00004558
+             2         S            81640.00000000          0.00035411
+             3         S            18580.00000000          0.00185797
+             4         S             5261.00000000          0.00776851
+             5         S             1717.00000000          0.02742320
+             6         S              619.90000000          0.08238360
+             7         S              241.60000000          0.20123000
+             8         S               99.79000000          0.35678100
+             9         S               43.15000000          0.34956300
+            10         S               19.14000000          0.11826600
+            11         S                7.48800000          0.00560190
+            12         S                3.20500000          0.00048347
+            13         S                0.52040000          0.00002920
+             1         S           545000.00000000         -0.00001296
+             2         S            81640.00000000         -0.00010043
+             3         S            18580.00000000         -0.00052958
+             4         S             5261.00000000         -0.00221396
+             5         S             1717.00000000         -0.00796845
+             6         S              619.90000000         -0.02458030
+             7         S              241.60000000         -0.06577980
+             8         S               99.79000000         -0.13794200
+             9         S               43.15000000         -0.20163000
+            10         S               19.14000000         -0.04128340
+            11         S                7.48800000          0.48468000
+            12         S                3.20500000          0.57922400
+            13         S                0.52040000         -0.00727553
+             1         S           545000.00000000          0.00000405
+             2         S            81640.00000000          0.00003137
+             3         S            18580.00000000          0.00016565
+             4         S             5261.00000000          0.00069166
+             5         S             1717.00000000          0.00249790
+             6         S              619.90000000          0.00771074
+             7         S              241.60000000          0.02087140
+             8         S               99.79000000          0.04439650
+             9         S               43.15000000          0.06802240
+            10         S               19.14000000          0.01413500
+            11         S                7.48800000         -0.20748900
+            12         S                3.20500000         -0.42504500
+            13         S                0.52040000          0.73362700
+             1         S                1.19600000          1.00000000
+             1         S                0.19540000          1.00000000
+             1         P              761.80000000          0.00236976
+             2         P              180.20000000          0.01901990
+             3         P               57.50000000          0.08808070
+             4         P               21.24000000          0.25637700
+             5         P                8.38800000          0.43871100
+             6         P                3.41600000          0.34756900
+             7         P                0.45230000         -0.00523882
+             1         P              761.80000000         -0.00066721
+             2         P              180.20000000         -0.00532717
+             3         P               57.50000000         -0.02554940
+             4         P               21.24000000         -0.07571970
+             5         P                8.38800000         -0.14113300
+             6         P                3.41600000         -0.09327680
+             7         P                0.45230000          0.56245000
+             1         P                1.20600000          1.00000000
+             1         P                0.15450000          1.00000000
+             1         D                0.41000000          1.00000000
+             1         D                1.25400000          1.00000000
+             1         F                0.89000000          1.00000000
+    ... END DESCRIPTION OF BASIS
+ 
+ 
+  END INFORMATION OF PARTICLES
+ 
+ 
+  INFORMATION OF THE QUANTUM SYSTEM 
+     ---------------------------------------------------------------------
+                 ID     Occupied Orbitals     Basis size
+     ---------------------------------------------------------------------
+                 E-           18               78
+ 
+  END INFORMATION OF QUANTUM SYSTEM
+ 
+                       INITIAL GEOMETRY: AMSTRONG
+                 -----------------------------------
+                       <x>                 <y>                 <z>
+      E-AR        0.0000000000        0.0000000000        0.0000000000
+      E-AR        2.0108735471        0.0000000000        0.0000000000
+        AR        0.0000000000        0.0000000000        0.0000000000
+        BE        2.0108735471        0.0000000000        0.0000000000
+ 
+                     MATRIX OF DISTANCE: ANGSTROM
+                 -----------------------------------
+                          AR(1)          BE(2)     
+ 
+        AR(1)            0.000000       2.010874
+        BE(2)            2.010874       0.000000
+ 
+--------------------------------------------------------------------------------
+** PROGRAM: SCF (Hartree Fock).     Author: S.A. Gonzalez, E. Posada, F. Moncada
+--------------------------------------------------------------------------------
+INFO: RUNNING IN RHF MODE.
+ 
+ 
+ ### ERROR ###
+    Debug description: Class object Matrix in the getfromFile() function ATTRACTION E-
+    Description: End of file!
+ ###
+ 
+
+ Elapsed Time :   1.21E-01 (s)
+ lowdin execution terminated ABNORMALLY at : Wed Nov 27 14:37:15 2024
+ 
+ ### ERROR ###
+    Debug description: in CalculatateProperties constructor
+    Description: I did not find the file lowdin.wfn or nopos_10.Matrices.ci
+ ###
+ 
+
+ Elapsed Time :   3.12E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Wed Nov 27 14:37:15 2024
+
+  TOTAL CPU Time:      0.211 (s)
+ TOTAL Wall Time:      0.067 (s)
+  Elapsed Time:   0h  0m  0s  69ms
+LOWDIN execution terminated normally at : Wed Nov 27 14:37:15 2024
+-rw-rw-r-- 1 pohl pohl   64 nov 27 14:37 gepol.inp
+-rw-rw-r-- 1 pohl pohl   91 nov 27 14:37 gepol.xyzr
+-rw-rw-r-- 1 pohl pohl 9.0K nov 27 14:37 lowdin.bas
+-rw-rw-r-- 1 pohl pohl  16K nov 27 14:37 lowdin.dat
+-rw-rw-r-- 1 pohl pohl  96K nov 27 14:37 lowdin.opints
+-rw-rw-r-- 1 pohl pohl  57K nov 27 14:37 lowdin.sys
+-rw-rw-r-- 1 pohl pohl  345 nov 27 14:37 nopos_10
+-rw-rw-r-- 1 pohl pohl 1.3K nov 27 14:37 nopos_10.aux
+-rw-rw-r-- 1 pohl pohl  349 nov 27 14:37 nopos_10.lowdin
+-rw-rw-r-- 1 pohl pohl  15K nov 27 14:37 nopos_10.out

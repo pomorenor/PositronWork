@@ -1,0 +1,223 @@
+Begin job by input: Be.lowdin, for user:   at  mar 26 nov 2024 14:38:45 -05
+under operating system Linux helios 5.19.0-46-generic #47-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 16 13:30:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+Compilation information
+  commit: f31d3924f6ee2ce9d77f07edcc1ba27359319d14
+  compilation date:  mar 17 sep 2024 16:16:17 -05
+
+BEGIN INPUT INFO:
+------------------------------------
+
+GEOMETRY
+        e-(Be) 6-31G  0 0 0
+        Be     dirac	   0 0 0
+END GEOMETRY
+
+TASKS
+        method = "RHF"
+END TASKS
+
+OUTPUTS
+	wfnFile
+END OUTPUTS
+
+CONTROL
+	readFchk=T
+	noSCF=T
+	units="BOHRS"
+	convergenceMethod=1
+	overlapEigenThreshold=1E-6
+	HFprintEigenvalues=T
+	totalEnergyTolerance = 1E-9
+END CONTROL
+
+
+... END INPUT INFO
+
+
+ LOWDIN execution started at : Tue Nov 26 14:38:45 2024
+ ---------------------------------------------------------------
+ 
+ ***************************************************************
+ *                   LOWDIN 2.0  (May/2013)                    *
+ *                                                             *
+ *  R. FLORES-MORENO, E. F. POSADA, F. S. MONCADA, J.ROMERO,   *
+ *  J. CHARRY, M. DIAZ-TINOCO, S. A. GONZALEZ, N. F. AGUIRRE,  *
+ *  A. REYES                                                   *
+ *                                                             *
+ *  https://sites.google.com/site/lowdinproject/               *
+ *                                                             *
+ ***************************************************************
+ 
+ PARSING INPUT... DONE!
+ 
+ LOWDIN IS RUNNING WITH NEXT PARAMETERS: 
+ ----------------------------------------
+ 
+         METHOD TYPE:  RHF
+         NUMBER OF CORES:     4
+         NONELECTRONIC DENSITY GUESS: HCORE
+         ELECTRONIC DENSITY GUESS: HCORE
+         CRITERIUM OF CONVERGENCE: ENERGY
+         NONELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         ELECTRONIC ENERGY TOLERANCE IN SCFs:     0.10000E-07
+         TOTAL ENERGY TOLERANCE IN SCFs:     0.10000E-08
+         SCHEME OF ITERATION: GLOBAL ITERATIONS
+         SCF MAX. SUBITERATIONS - NONELECTRONS :     1
+         SCF MAX. SUBITERATIONS - ELECTRONS :     1
+         SCF MAX. ITERATIONS - INTERSPECIES :   200
+         COEFFICIENTS WILL BE READ AND NO SCF WILL BE PERFORMED
+         INTEGRAL STORAGE: DISK
+         STACK SIZE FOR ERIS : 30000
+         METHOD OF SCF CONVERGENCE: DAMPING
+ 
+  MOLECULAR SYSTEM: Be
+ -----------------
+ 
+    DESCRIPTION   : Be
+    CHARGE        :   0
+    PUNTUAL GROUP : NONE
+ 
+ 
+  INFORMATION OF PARTICLES :
+ =========================
+         Total number of particles   =       5
+         Number of quantum particles =       4
+         Number of puntual charges   =       1
+         Number of quantum species   =       1
+ 
+                 INFORMATION OF QUANTUM SPECIES 
+    ----------------------------------------------------------------------
+         ID      Symbol            mass     charge      omega     spin     multiplicity
+    ----------------------------------------------------------------------
+         1             E-         1.0000     -1.00      0.00      0.50      1.00
+ 
+                   CONSTANTS OF COUPLING 
+      ------------------------------------------------------------
+              Symbol      kappa        eta     lambda occupation
+      ------------------------------------------------------------
+                  E-      -1.00       2.00       2.00       2.00
+ 
+                   BASIS SET FOR SPECIES 
+      ------------------------------------------------------------
+           Symbol          N. Basis     N. Particles     Basis Set
+      ------------------------------------------------------------
+                 E-            5                4          6-31G
+ 
+                                ATOMIC BASIS
+         ------------------------------------------------------------
+          PRIMITIVE   SHELL             EXPONENT         COEFFICIENT 
+         ------------------------------------------------------------
+ 
+    BEGIN DESCRIPTION OF BASIS FOR:    E-
+    ==============================
+ 
+ 
+            BE BASIS SET:          6-31G
+             1         S             1264.58570000          0.00194480
+             2         S              189.93681000          0.01483510
+             3         S               43.15908900          0.07209060
+             4         S               12.09866300          0.23715420
+             5         S                3.80632320          0.46919870
+             6         S                1.27289030          0.35652020
+             1         S                3.19646310         -0.11264870
+             2         S                0.74781330         -0.22950640
+             3         S                0.21996630          1.18691670
+             1         P                3.19646310          0.05598020
+             2         P                0.74781330          0.26155060
+             3         P                0.21996630          0.79397230
+             1         S                0.08230990          1.00000000
+             1         P                0.08230990          1.00000000
+    ... END DESCRIPTION OF BASIS
+ 
+ 
+  END INFORMATION OF PARTICLES
+ 
+ 
+  INFORMATION OF THE QUANTUM SYSTEM 
+     ---------------------------------------------------------------------
+                 ID     Occupied Orbitals     Basis size
+     ---------------------------------------------------------------------
+                 E-            2                9
+ 
+  END INFORMATION OF QUANTUM SYSTEM
+ 
+                       INITIAL GEOMETRY: AMSTRONG
+                 -----------------------------------
+                       <x>                 <y>                 <z>
+      E-BE        0.0000000000        0.0000000000        0.0000000000
+        BE        0.0000000000        0.0000000000        0.0000000000
+ 
+                     MATRIX OF DISTANCE: ANGSTROM
+                 -----------------------------------
+                          BE(1)     
+ 
+        BE(1)            0.000000
+ 
+--------------------------------------------------------------------------------
+** PROGRAM: SCF (Hartree Fock).     Author: S.A. Gonzalez, E. Posada, F. Moncada
+--------------------------------------------------------------------------------
+INFO: RUNNING IN RHF MODE.
+ 
+----------------------------------------------------------------------
+** PROGRAM INTS                          Author: E. F. Posada, 2013   
+----------------------------------------------------------------------
+INFO: RUNNING IN ONE_PARTICLE MODE.
+ 
+ Number of Overlap integrals for species E-:     81
+ Number of Kinetic integrals for species E-:     81
+ Number of Nuclear integrals for species E-:     81
+ Number of Moment integrals for species E-:    243
+ 
+** TOTAL CPU Time INTS :      0.057 (s)
+** TOTAL Elapsed Time INTS :      0.011 (s)
+ 
+ 
+ ### ERROR ###
+    Debug description: At MolecularSystem_readFchk
+    Description: I did not find any .fchk coefficients file
+ ###
+ 
+
+ Elapsed Time :   6.28E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Tue Nov 26 14:38:45 2024
+ 
+ ### ERROR ###
+    Debug description: in CalculatateProperties constructor
+    Description: I did not find the file lowdin.wfn or Be.Matrices.ci
+ ###
+ 
+
+ Elapsed Time :   2.65E-02 (s)
+ lowdin execution terminated ABNORMALLY at : Tue Nov 26 14:38:45 2024
+At line 454 of file OutputBuilder.f90 (unit = 20)
+Fortran runtime error: Cannot open file 'lowdin.wfn': No such file or directory
+
+Error termination. Backtrace:
+#0  0x152058c23ad0 in ???
+#1  0x152058c24649 in ???
+#2  0x152058c2527f in ???
+#3  0x152058e741f6 in ???
+#4  0x152058e744ed in ???
+#5  0x55db24d049ce in __outputbuilder__MOD_outputbuilder_writemoldenfile
+	at /home/pohl/Desktop/LOWDIN/openLOWDIN/src/output/OutputBuilder.f90:454
+#6  0x55db24d07be7 in __outputbuilder__MOD_outputbuilder_buildoutput
+	at /home/pohl/Desktop/LOWDIN/openLOWDIN/src/output/OutputBuilder.f90:318
+#7  0x55db24d09c62 in output_
+	at /home/pohl/Desktop/LOWDIN/openLOWDIN/src/output/Output.f90:91
+#8  0x55db24ced56e in main
+	at /home/pohl/Desktop/LOWDIN/openLOWDIN/src/output/Output.f90:37
+
+  TOTAL CPU Time:      0.236 (s)
+ TOTAL Wall Time:      0.173 (s)
+  Elapsed Time:   0h  0m  0s 172ms
+LOWDIN execution terminated normally at : Tue Nov 26 14:38:45 2024
+-rw-rw-r-- 1 pohl pohl  304 nov 26 14:38 Be
+-rw-rw-r-- 1 pohl pohl  936 nov 26 14:38 Be.aux
+-rw-rw-r-- 1 pohl pohl  309 nov 26 14:38 Be.lowdin
+-rw-rw-r-- 1 pohl pohl 8,1K nov 26 14:38 Be.out
+-rw-rw-r-- 1 pohl pohl   58 nov 26 14:38 gepol.inp
+-rw-rw-r-- 1 pohl pohl   50 nov 26 14:38 gepol.xyzr
+-rw-rw-r-- 1 pohl pohl 1,5K nov 26 14:38 lowdin.bas
+-rw-rw-r-- 1 pohl pohl  16K nov 26 14:38 lowdin.dat
+-rw-rw-r-- 1 pohl pohl  11K nov 26 14:38 lowdin.opints
+-rw-rw-r-- 1 pohl pohl 5,5K nov 26 14:38 lowdin.sys
